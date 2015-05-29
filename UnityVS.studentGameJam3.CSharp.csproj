@@ -54,11 +54,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enums.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Knight.cs" />
+    <Compile Include="Assets\Scripts\LifeManager.cs" />
     <Compile Include="Assets\Scripts\ManagerNavPoint.cs" />
     <Compile Include="Assets\Scripts\NavPointBehaviour.cs" />
-    <Compile Include="Assets\Scripts\osCharacter.cs" />
-    <Compile Include="Assets\Scripts\osEscudero.cs" />
+    <Compile Include="Assets\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Squire.cs" />
+    <Compile Include="Assets\Scripts\osSingleton.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
