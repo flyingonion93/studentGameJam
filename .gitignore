@@ -16,6 +16,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.sln
+*.suo
+*.csproj
 
 # =========================
 # Operating System Files
@@ -44,4 +47,3 @@ Temporary Items
 Library/
 Temp/
 Assets/UnityVS
-.sln
