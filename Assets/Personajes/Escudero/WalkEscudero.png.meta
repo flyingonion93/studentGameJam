@@ -50,7 +50,7 @@ TextureImporter:
     - name: Escudero_0
       rect:
         serializedVersion: 2
-        x: 30
+        x: 32
         y: 31
         width: 237
         height: 286
@@ -60,18 +60,18 @@ TextureImporter:
     - name: Escudero_1
       rect:
         serializedVersion: 2
-        x: 331
+        x: 336
         y: 31
         width: 237
-        height: 285
+        height: 286
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Escudero_2
       rect:
         serializedVersion: 2
-        x: 637
-        y: 30
+        x: 641
+        y: 31
         width: 237
         height: 286
       alignment: 0
@@ -80,10 +80,10 @@ TextureImporter:
     - name: Escudero_3
       rect:
         serializedVersion: 2
-        x: 941
+        x: 945
         y: 31
         width: 237
-        height: 283
+        height: 286
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
