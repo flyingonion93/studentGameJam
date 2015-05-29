@@ -52,58 +52,17 @@ public class Squire : MonoBehaviour {
         transform.position += movementValue;
     }
 
-    void OnTriggerEnter2D ( Collider2D col) {
-        if ( col.tag == "Life" )
-            ;
-    }
-
     void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "ShieldLife" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "Magnet" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "BigShield" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "LittleShield" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "Clone" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "BulletTime" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "NuclearBurp" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "SuperKnight" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "InvertControl" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "Beer" )
-            ;
+        if ( col.tag == "Life" ) { }
+        if ( col.tag == "ShieldLife" ) { }
+        if ( col.tag == "Magnet" ) { }
+        if ( col.tag == "BigShield" ) { }
+        if ( col.tag == "LittleShield" ) { }
+        if ( col.tag == "Clone" ) { }
+        if ( col.tag == "BulletTime" ) { }
+        if ( col.tag == "NuclearBurp" ) { }
+        if ( col.tag == "SuperKnight" ) { }
+        if ( col.tag == "Beer" ) { }
+        if ( col.tag == "InvertControl" ) { }
     }
 }

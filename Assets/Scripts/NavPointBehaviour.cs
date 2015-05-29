@@ -5,5 +5,6 @@ public class NavPointBehaviour : MonoBehaviour {
 
     void OnTriggerEnter2D ( Collider2D col ) {
         Destroy ( this.gameObject );
+        GameManager.Instance.ManagerNavPoint.navPointOnScreen = false;
     }
 }

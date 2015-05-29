@@ -4,7 +4,7 @@ using System.Collections;
 public class ManagerNavPoint : MonoBehaviour {
 
     public Transform LeftSide, RigthSide, knightPos, currentNavPoint;
-    bool navPointOnScreen;
+    public bool navPointOnScreen;
 
 	// Use this for initialization
 	void Start () {
