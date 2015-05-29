@@ -16,7 +16,6 @@ public class Squire : MonoBehaviour {
     }
 
     public void Update () {
-        // Falta el if del manager de la salut if > 0
         if ( GameManager.Instance.LifeManager.life > 0 ) {
             currentInputState = Enums.inputState_nm.NONE;
             DetectInput ();
