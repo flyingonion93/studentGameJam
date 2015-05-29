@@ -17,11 +17,12 @@ public class Squire : MonoBehaviour {
 
     public void Update () {
         // Falta el if del manager de la salut if > 0
-        currentInputState = Enums.inputState_nm.NONE;
-        DetectInput ();
-        UpdatePosition ();
-        // Falta el else, si està mort
-        currentInputState = Enums.inputState_nm.DEAD;
+        if ( GameManager.Instance.LifeManager.life > 0 ) {
+            currentInputState = Enums.inputState_nm.NONE;
+            DetectInput ();
+            UpdatePosition ();
+        } else
+            currentInputState = Enums.inputState_nm.DEAD;
     }
 
     protected void DetectInput () {
@@ -52,58 +53,30 @@ public class Squire : MonoBehaviour {
         transform.position += movementValue;
     }
 
-    /*void OnTriggerEnter2D ( Collider2D col) {
-        if ( col.tag == "Life" )
-            ;
+    void OnTriggerEnter2D ( Collider2D col) {
+        switch ( col.tag ) { 
+            case "Life":
+                break;
+            case "ShieldLife":
+                break;
+            case "Magnet":
+                break;
+            case "BigShield":
+                break;
+            case "LittleShield":
+                break;
+            case "Clone":
+                break;
+            case "BulletTime":
+                break;
+            case "NuclearBurp":
+                break;
+            case "SuperKnight":
+                break;
+            case "InvertControl":
+                break;
+            case "Beer":
+                break;
+        }
     }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "ShieldLife" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "Magnet" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "BigShield" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "LittleShield" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "Clone" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "BulletTime" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "NuclearBurp" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "SuperKnight" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "InvertControl" )
-            ;
-    }
-
-    void OnTriggerEnter2D ( Collider2D col ) {
-        if ( col.tag == "Beer" )
-            ;
-    }*/
 }
