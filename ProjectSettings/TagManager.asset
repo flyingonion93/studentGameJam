@@ -3,6 +3,11 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - Knight
+  - Squire
+  - Shield
+  - Enemies
+  - NavPoint
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -12,8 +17,8 @@ TagManager:
   Builtin Layer 5: UI
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: 
-  User Layer 9: 
+  User Layer 8: Knight
+  User Layer 9: NavPoint
   User Layer 10: 
   User Layer 11: 
   User Layer 12: 
