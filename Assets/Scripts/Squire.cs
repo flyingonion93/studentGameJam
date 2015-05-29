@@ -52,7 +52,7 @@ public class Squire : MonoBehaviour {
         transform.position += movementValue;
     }
 
-    void OnTriggerEnter2D ( Collider2D col) {
+    /*void OnTriggerEnter2D ( Collider2D col) {
         if ( col.tag == "Life" )
             ;
     }
@@ -105,5 +105,5 @@ public class Squire : MonoBehaviour {
     void OnTriggerEnter2D ( Collider2D col ) {
         if ( col.tag == "Beer" )
             ;
-    }
+    }*/
 }
