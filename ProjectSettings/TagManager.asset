@@ -19,17 +19,17 @@ TagManager:
   Builtin Layer 7: 
   User Layer 8: Knight
   User Layer 9: NavPoint
-  User Layer 10: 
-  User Layer 11: 
-  User Layer 12: 
-  User Layer 13: 
-  User Layer 14: 
-  User Layer 15: 
-  User Layer 16: 
-  User Layer 17: 
-  User Layer 18: 
-  User Layer 19: 
-  User Layer 20: 
+  User Layer 10: Life
+  User Layer 11: Shield life
+  User Layer 12: Magnet
+  User Layer 13: BigShield
+  User Layer 14: LittleShield
+  User Layer 15: Clone
+  User Layer 16: BulletTime
+  User Layer 17: NuclearBurp
+  User Layer 18: SuperKnight
+  User Layer 19: InvertControl
+  User Layer 20: Beer
   User Layer 21: 
   User Layer 22: 
   User Layer 23: 
