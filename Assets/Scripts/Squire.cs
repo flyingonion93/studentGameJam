@@ -53,7 +53,6 @@ public class Squire : MonoBehaviour {
         transform.position += movementValue;
     }
 
-<<<<<<< HEAD
     void OnTriggerEnter2D ( Collider2D col) {
         switch ( col.tag ) { 
             case "Life":
@@ -79,8 +78,7 @@ public class Squire : MonoBehaviour {
             case "Beer":
                 break;
         }
-=======
-<<<<<<< HEAD
+
     void OnTriggerEnter2D ( Collider2D col ) {
         if ( col.tag == "Life" ) { }
         if ( col.tag == "ShieldLife" ) { }
@@ -95,11 +93,3 @@ public class Squire : MonoBehaviour {
         if ( col.tag == "InvertControl" ) { }
     }
 }
-=======
-    /*void OnTriggerEnter2D ( Collider2D col) {
-        if ( col.tag == "Life" )
-            ;
->>>>>>> origin/master
-    }
-}
->>>>>>> 893c66809984da76d66eab175c9edd62136fcde7
