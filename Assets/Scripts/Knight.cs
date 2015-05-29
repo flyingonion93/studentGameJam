@@ -5,7 +5,7 @@ public class Knight : MonoBehaviour {
 
     public float moveSpeed = 4.0f;
 
-    public Transform navigationPoint;
+    [HideInInspector] public Transform navigationPoint;
 
     public void Update () {
         transform.LookAt ( navigationPoint );
