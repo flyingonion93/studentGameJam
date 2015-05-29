@@ -46,4 +46,5 @@ Temporary Items
 .apdisk
 Library/
 Temp/
-Assets/UnityVS
+Assets/UnityVS/
+obj/
