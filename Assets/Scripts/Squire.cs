@@ -5,7 +5,7 @@ public class Squire : MonoBehaviour {
 
     [HideInInspector] public Vector2 spawnPos;
     [HideInInspector] public Enums.inputState_nm currentInputState;
-    [HideInInspector] public float walkVel;
+    public float walkVel;
     protected Transform _transform;
     protected bool alive, inverted;
     protected Vector3 movementValue;
@@ -50,5 +50,9 @@ public class Squire : MonoBehaviour {
 
     protected void Walk () {
         transform.position += movementValue;
+    }
+
+    void OnTriggerEnter2D ( Collider2D col) { 
+        
     }
 }
