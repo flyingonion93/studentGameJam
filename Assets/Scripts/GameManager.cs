@@ -55,5 +55,10 @@ public class GameManager : osSingleton<GameManager> {
     public SceneManager SceneManager {
         get { return _sceneManager; }
     }
+
+    public PickupManager _pickupManager;
+    public PickupManager PickupManager {
+        get { return _pickupManager; }
+    }
     #endregion
 }

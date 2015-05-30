@@ -1,15 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Enemy : MonoBehaviour {
+public class Enemy : Characters {
 
     public Transform Left, Rigth;
-
-    public Camera mainCamera;
     public Enums.enemy_type currentType;
     public int attackValue;
-    [HideInInspector] public float walkVel;
-    [HideInInspector] public bool alive;
 
     public void Start () {
         alive = true;
@@ -27,20 +23,22 @@ public class Enemy : MonoBehaviour {
         }
     }
 
-    public void Update () {
-        float x = mainCamera.transform.position.x;
-        float y = mainCamera.transform.position.y;
-        float height = mainCamera.orthographicSize;
-        float width = height * mainCamera.aspect;
-
-        if ( alive && ( ( transform.position.x > x + width + 1.5 ) || ( transform.position.x < x - width - 1.5 ) ) || ( ( transform.position.y > y + height + 1.5 ) || ( transform.position.y < y - height - 1.5 ) ) ) {
-            Destroy ( this.gameObject );
-        } else if ( alive && currentType != Enums.enemy_type.BOWMAN ) {
-            UpdatePosition ();
-        }
+    protected override IEnumerator Attack () {
+        throw new System.NotImplementedException ();
     }
 
-    public void UpdatePosition () {
+    public override void DetectInput () {
+        throw new System.NotImplementedException ();
+    }
+
+
+
+    public void Update () {
+        if ( alive && currentType != Enums.enemy_type.BOWMAN )
+            UpdatePosition ();
+    }
+
+    public override void UpdatePosition () {
         switch ( currentType ) {
             case Enums.enemy_type.SWORDMAN:
                 if ( Physics2D.OverlapCircle ( transform.position, 3.0f, LayerMask.NameToLayer ( "Knight" ) ) ) {
