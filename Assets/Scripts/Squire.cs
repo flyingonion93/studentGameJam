@@ -3,11 +3,7 @@ using System.Collections;
 
 public class Squire : Characters {
 
-<<<<<<< HEAD
-    public Transform smallShield, primaryShield, heavyShield, currentShield;
-=======
-    public Transform smallShield, primaryShield, heavyShield, shotgun;
->>>>>>> origin/master
+    public Transform smallShield, primaryShield, heavyShield, currentShield, shotgun;
     public int attackValue;
     protected bool inverted;
 
@@ -114,10 +110,16 @@ public class Squire : Characters {
                 break;
             case "InvertControl":
                 inverted = true;
+                StartCoroutine ( "RevertMagic" );
                 break;
             case "Beer":
                 break;
         }
+    }
+
+    public IEnumerator RevertMagic () {
+        yield return new WaitForSeconds ( 5.0f );
+        inverted = false;
     }
 
     public IEnumerator NewPoint () {

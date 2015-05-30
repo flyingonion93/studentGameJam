@@ -39,6 +39,11 @@ public class Enemy : MonoBehaviour {
     }
 
     public void UpdatePosition () {
-        
+        switch ( currentType ) { 
+            case Enums.enemy_type.SWORDMAN:
+                break;
+            case Enums.enemy_type.HORSEMAN:
+                break;
+        }
     }
 }
