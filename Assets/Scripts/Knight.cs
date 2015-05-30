@@ -2,16 +2,26 @@
 using System.Collections;
 
 
-public class Knight : MonoBehaviour {
+public class Knight : Characters {
 
     public Transform LeftSide, RigthSide, currentNavPoint;
 
     public float moveSpeed, relleno;
-    public Transform ninjas;
     public float temps = 5f;
 
     public void Start () {
-        ninjas.gameObject.SetActive ( false );
+    }
+
+    public override void DetectInput () {
+        throw new System.NotImplementedException ();
+    }
+
+    protected override IEnumerator Attack () {
+        throw new System.NotImplementedException ();
+    }
+
+    public override void UpdatePosition () {
+        throw new System.NotImplementedException ();
     }
 
     public void Update () {
@@ -24,12 +34,12 @@ public class Knight : MonoBehaviour {
             currentNavPoint.position = GenerateRandomVector ();
     }
 
-    public IEnumerator ItsNinjaTime () {
+    //public IEnumerator ItsNinjaTime () {
         
-        ninjas.gameObject.SetActive ( true );
-        yield return new WaitForSeconds ( temps );
-        ninjas.gameObject.SetActive ( false );
-    }
+    //    ninjas.gameObject.SetActive ( true );
+    //    yield return new WaitForSeconds ( temps );
+    //    ninjas.gameObject.SetActive ( false );
+    //}
 
     protected Vector3 GenerateRandomVector () {
         float randX = Random.Range ( LeftSide.position.x, RigthSide.position.x );

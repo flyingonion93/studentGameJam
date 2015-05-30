@@ -14,6 +14,7 @@ public  class Animations : MonoBehaviour {
         _animator = GetComponent<Animator> ();
         _animState = characterAnimState;
         _character = GetComponent<Characters> ();
+        Debug.Log ( _character );
     }
 
     public void Update () {
@@ -30,12 +31,12 @@ public  class Animations : MonoBehaviour {
         // Move
         if ( _character.currentInputState == Enums.inputState_nm.WALK && currentAnim != Enums.anim_nm.WALK ) {
             currentAnim = Enums.anim_nm.WALK;
-            _animator.SetInteger ( _animState, 1);
+            _animator.SetInteger ( _animState, 1 );
         }
         // Idle
         if ( _character.currentInputState == Enums.inputState_nm.NONE && currentAnim != Enums.anim_nm.IDLE ) {
             currentAnim = Enums.anim_nm.IDLE;
-            _animator.SetInteger ( _animState, 0);
+            _animator.SetInteger ( _animState, 0 );
         }
     }
 }
