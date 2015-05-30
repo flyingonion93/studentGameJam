@@ -8,6 +8,7 @@ public  class Animations : MonoBehaviour {
     protected int characterAnimState = Animator.StringToHash ( "controlAnimState" );
     protected int _animState;
     private Characters _character;
+    public bool hit;
 
     public virtual void Awake () {
         _animator = GetComponent<Animator> ();
@@ -16,6 +17,11 @@ public  class Animations : MonoBehaviour {
     }
 
     public void Update () {
+        // Hit
+        if ( hit && currentAnim != Enums.anim_nm.HIT ) {
+            currentAnim = Enums.anim_nm.HIT;
+            _animator.SetInteger ( _animState, 2 );
+        }
         // Move
         if ( _character.currentInputState == Enums.inputState_nm.WALK && currentAnim != Enums.anim_nm.WALK ) {
             currentAnim = Enums.anim_nm.WALK;
