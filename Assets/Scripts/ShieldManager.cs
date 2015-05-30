@@ -18,7 +18,6 @@ public class ShieldManager : MonoBehaviour {
         resistance -= down;
     }
 
-<<<<<<< HEAD
     public void MagnetShieldInstance () {        
     }
 
@@ -32,13 +31,6 @@ public class ShieldManager : MonoBehaviour {
         GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( false );
         GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( false );
         GameManager.Instance.Squire.smallShield.gameObject.SetActive ( true );
-=======
-    public void BigShieldInstance () { 
-
-    }
-
-    public void LittleShieldInstance () { 
-
     }
 
     public void MagnetShield () {
@@ -46,6 +38,5 @@ public class ShieldManager : MonoBehaviour {
         if ( detected ) { 
             //shieldPos.rigidbody2D.AddForce (
         }
->>>>>>> origin/master
     }
 }
