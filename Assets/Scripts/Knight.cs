@@ -15,6 +15,7 @@ public class Knight : MonoBehaviour {
 
     public void Update () {
         // FALTA COMPROVAR LA SALUT
+        
         StartCoroutine ( "NewNavPoint" );
     }
 

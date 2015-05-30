@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Squire : Characters {
 
-    public Transform smallShield, primaryShield, heavyShield;
+    public Transform smallShield, primaryShield, heavyShield, shotgun;
     public int attackValue;
     protected bool inverted;
 
@@ -90,6 +90,10 @@ public class Squire : Characters {
             case "LittleShield":
                 print ( "little" );
                 GameManager.Instance.ShieldManager.StartCoroutine( "LittleShieldInstance" );
+                break;
+            case "PickupShotgun":
+                print ( "shotgun" );
+                GameManager.Instance.ShieldManager.StartCoroutine ( "ShotgunInstance" );
                 break;
             case "Ninjas":
                 //GameManager.Instance.Knight.ninjas.gameObject.SetActive ( true );
