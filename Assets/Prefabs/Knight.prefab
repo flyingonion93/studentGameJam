@@ -36,7 +36,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193792}
-  m_Mass: 1
+  m_Mass: 9.99999975e-05
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -67,6 +67,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf167148fd594fb40a01437a8ec5d468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LeftSide: {fileID: 0}
+  RigthSide: {fileID: 0}
+  currentNavPoint: {fileID: 0}
   moveSpeed: 4
   ninjas: {fileID: 414032, guid: 5b899bb6cc5e8d24fb862e8f34e46f36, type: 2}
   temps: 3

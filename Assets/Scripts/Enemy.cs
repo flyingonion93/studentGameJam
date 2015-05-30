@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 
+    public Transform Left, Rigth;
+
     public Camera mainCamera;
     Enums.enemy_type currentType;
     public int attackValue;
@@ -17,10 +19,10 @@ public class Enemy : MonoBehaviour {
                 walkVel = 0.0f;
                 break;
             case Enums.enemy_type.SWORDMAN:
-                walkVel = 0.2f;
+                walkVel = 2.5f;
                 break;
             case Enums.enemy_type.HORSEMAN:
-                walkVel = 0.25f;
+                walkVel = 3.0f;
                 break;
         }
     }
@@ -41,9 +43,19 @@ public class Enemy : MonoBehaviour {
     public void UpdatePosition () {
         switch ( currentType ) { 
             case Enums.enemy_type.SWORDMAN:
+                if ( Physics2D.OverlapCircle ( transform.position, 3.0f, LayerMask.NameToLayer("Knight") ) ) {
+                    transform.position = Vector3.MoveTowards ( transform.position, GameManager, walkVel * Time.deltaTime );
+                }
                 break;
             case Enums.enemy_type.HORSEMAN:
                 break;
         }
+    }
+
+    protected Vector3 GenerateRandomVector () {
+        float randX = Random.Range ( Left.position.x, Rigth.position.x );
+        float randY = Random.Range ( transform.position.y - 1, transform.position.y + 1 );
+        Vector3 posVec = new Vector3 ( randX, randY, transform.position.z );
+        return posVec;
     }
 }
