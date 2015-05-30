@@ -81,36 +81,36 @@ public class Squire : Characters {
                 GameManager.Instance.LifeManager.UpLife ();
                 audio.clip = GameManager.Instance.SoundManager.fxPowerUp;
                 audio.Play ();
-                Destroy (this.gameObject);
+                Destroy ( col.gameObject );
                 break;
             case "ShieldUp":
                 GameManager.Instance.ShieldManager.UpShield ();
                 audio.clip = GameManager.Instance.SoundManager.fxPowerUp;
                 audio.Play();
-                Destroy ( this.gameObject );
+                Destroy ( col.gameObject );
                 break;
             case "MagShield":
                 GameManager.Instance.ShieldManager.StartCoroutine( "MagnetShieldInstance" );
 
-                Destroy ( this.gameObject );
+                Destroy ( col.gameObject );
                 break;
             case "BigShield":
                 GameManager.Instance.ShieldManager.StartCoroutine( "BigShieldInstance" );
                 audio.clip = GameManager.Instance.SoundManager.fxShieldUpgrade;
                 audio.Play();
                 currentShield = heavyShield;
-                Destroy ( this.gameObject );
+                Destroy ( col.gameObject );
                 break;
             case "LittleShield":
                 GameManager.Instance.ShieldManager.StartCoroutine( "LittleShieldInstance" );
                 audio.clip = GameManager.Instance.SoundManager.fxShieldUpgrade;
                 audio.Play ();
                 currentShield = smallShield;
-                Destroy ( this.gameObject );
+                Destroy ( col.gameObject );
                 break;
             case "PickupShotgun":
                 GameManager.Instance.ShieldManager.StartCoroutine ( "ShotgunInstance" );
-                Destroy ( this.gameObject );
+                Destroy ( col.gameObject );
                 break;
             case "BulletTime":
                 break;
@@ -121,10 +121,12 @@ public class Squire : Characters {
             case "InvertControl":
                 inverted = true;
                 StartCoroutine ( "RevertMagic" );
-                Destroy ( this.gameObject );
+                Destroy ( col.gameObject );
                 break;
             case "Beer":
                 GameManager.Instance.Knight.moveSpeed = 2.0f;
+                StartCoroutine ( "Cerveceame" );
+                Destroy ( col.gameObject );
                 break;
         }
     }
