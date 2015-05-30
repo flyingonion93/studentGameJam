@@ -3,7 +3,11 @@ using System.Collections;
 
 public class Squire : Characters {
 
+<<<<<<< HEAD
     public Transform smallShield, primaryShield, heavyShield, currentShield;
+=======
+    public Transform smallShield, primaryShield, heavyShield, shotgun;
+>>>>>>> origin/master
     public int attackValue;
     protected bool inverted;
 
@@ -93,6 +97,10 @@ public class Squire : Characters {
                 print ( "little" );
                 GameManager.Instance.ShieldManager.StartCoroutine( "LittleShieldInstance" );
                 currentShield = smallShield;
+                break;
+            case "PickupShotgun":
+                print ( "shotgun" );
+                GameManager.Instance.ShieldManager.StartCoroutine ( "ShotgunInstance" );
                 break;
             case "Ninjas":
                 //GameManager.Instance.Knight.ninjas.gameObject.SetActive ( true );

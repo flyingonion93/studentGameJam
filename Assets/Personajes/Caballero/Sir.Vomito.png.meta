@@ -1,11 +1,24 @@
 fileFormatVersion: 2
-guid: 6d09792649987d94e879c933ba842114
+guid: dfe98a4c3851cba49b8db6c7296d3dd9
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Escudero_0
-    21300002: Escudero_1
-    21300004: Escudero_2
-    21300006: Escudero_3
+    21300000: Sir.Vomito_0
+    21300002: Sir.Vomito_2
+    21300004: Sir.Vomito_6
+    21300006: Sir.Vomito_7
+    21300008: Sir.Vomito_8
+    21300010: Sir.Vomito_9
+    21300012: Sir.Vomito_1
+    21300014: Sir.Vomito_2
+    21300016: Sir.Vomito_3
+    21300018: Sir.Vomito_4
+    21300020: Sir.Vomito_1
+    21300022: Sir.Vomito_11
+    21300024: Sir.Vomito_12
+    21300026: Sir.Vomito_13
+    21300028: Sir.Vomito_14
+    21300030: Sir.Vomito_10
+    21300032: Sir.Vomito_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -41,49 +54,69 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 140
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Escudero_0
+    - name: Sir.Vomito_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 31
-        width: 237
-        height: 286
+        x: 22
+        y: 0
+        width: 363
+        height: 400
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Escudero_1
+    - name: Sir.Vomito_1
       rect:
         serializedVersion: 2
-        x: 336
-        y: 31
-        width: 237
-        height: 286
+        x: 464
+        y: 0
+        width: 363
+        height: 400
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Escudero_2
+    - name: Sir.Vomito_2
       rect:
         serializedVersion: 2
-        x: 641
-        y: 31
-        width: 237
-        height: 286
+        x: 902
+        y: 0
+        width: 363
+        height: 400
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Escudero_3
+    - name: Sir.Vomito_3
       rect:
         serializedVersion: 2
-        x: 945
-        y: 31
-        width: 237
-        height: 286
+        x: 1340
+        y: 0
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sir.Vomito_4
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 0
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sir.Vomito_5
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 0
+        width: 384
+        height: 400
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

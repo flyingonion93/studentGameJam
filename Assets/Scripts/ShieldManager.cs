@@ -18,15 +18,16 @@ public class ShieldManager : MonoBehaviour {
         resistance -= down;
     }
 
-    public IEnumerator MagnetShieldInstance () {
-        GameManager.Instance.Shield.isMagnetic = true;
-        yield return new WaitForSeconds ( 5 );
-        GameManager.Instance.Shield.isMagnetic = false;
-    }
+    //public IEnumerator MagnetShieldInstance () {
+    //    GameManager.Instance.Shield.isMagnetic = true;
+    //    yield return new WaitForSeconds ( 5 );
+    //    GameManager.Instance.Shield.isMagnetic = false;
+    //}
 
     public IEnumerator BigShieldInstance () {
         GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );
         GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.shotgun.gameObject.SetActive ( false );
         GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( true );
         yield return new WaitForSeconds ( 5 );
         GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );        
@@ -41,6 +42,18 @@ public class ShieldManager : MonoBehaviour {
         yield return new WaitForSeconds ( 5 );
         GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );
         GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( true );
+    }
+
+    public IEnumerator ShotgunInstance () {
+        GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.shotgun.gameObject.SetActive ( true );
+        yield return new WaitForSeconds ( 10 );
+        GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( false );        
+        GameManager.Instance.Squire.shotgun.gameObject.SetActive ( false );
         GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( true );
     }
 
