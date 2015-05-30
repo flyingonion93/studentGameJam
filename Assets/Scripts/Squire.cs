@@ -73,6 +73,7 @@ public class Squire : Characters {
                 GameManager.Instance.ShieldManager.LittleShieldInstance ();
                 break;
             case "Clone":
+                //Instantiate ( ninjas, knightPos.position, Quaternion.identity );
                 break;
             case "BulletTime":
                 break;
