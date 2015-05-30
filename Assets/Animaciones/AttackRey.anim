@@ -21,16 +21,44 @@ AnimationClip:
         value: {x: .699999988, y: .699999988, z: 1}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
+        tangentMode: 1107296256
       - time: .100000001
         value: {x: .699999988, y: .699999988, z: 1}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 1462661733
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: 
-  m_FloatCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0500000007
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Center.x
+    path: 
+    classID: 58
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.660000026
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Center.y
+    path: 
+    classID: 58
+    script: {fileID: 0}
   m_PPtrCurves:
   - curve:
     - time: 0
@@ -82,6 +110,18 @@ AnimationClip:
       attribute: 3
       script: {fileID: 0}
       classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 605858901
+      script: {fileID: 0}
+      classID: 58
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 1394318531
+      script: {fileID: 0}
+      classID: 58
       customType: 0
       isPPtrCurve: 0
     pptrCurveMapping:
@@ -173,6 +213,34 @@ AnimationClip:
     attribute: m_LocalScale.z
     path: 
     classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0500000007
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Center.x
+    path: 
+    classID: 58
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.660000026
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Center.y
+    path: 
+    classID: 58
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_Events: []
