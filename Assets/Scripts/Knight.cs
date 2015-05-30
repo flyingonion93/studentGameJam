@@ -6,7 +6,7 @@ public class Knight : MonoBehaviour {
 
     public Transform LeftSide, RigthSide, currentNavPoint;
 
-    public float moveSpeed;
+    public float moveSpeed, relleno;
     public Transform ninjas;
     public float temps = 5f;
 

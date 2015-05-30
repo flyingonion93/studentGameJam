@@ -6,10 +6,10 @@ public class Enemy : MonoBehaviour {
     public Transform Left, Rigth;
 
     public Camera mainCamera;
-    Enums.enemy_type currentType;
+    public Enums.enemy_type currentType;
     public int attackValue;
-    public float walkVel;
-    public bool alive;
+    [HideInInspector] public float walkVel;
+    [HideInInspector] public bool alive;
 
     public void Start () {
         alive = true;
@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour {
         float height = mainCamera.orthographicSize;
         float width = height * mainCamera.aspect;
 
-        if ( alive && ( ( transform.position.x > x + width ) || ( transform.position.x < x - width ) ) || ( ( transform.position.y > y + height ) || ( transform.position.y < y - height ) ) ) {
+        if ( alive && ( ( transform.position.x > x + width + 1.5 ) || ( transform.position.x < x - width - 1.5 ) ) || ( ( transform.position.y > y + height + 1.5 ) || ( transform.position.y < y - height - 1.5 ) ) ) {
             Destroy ( this.gameObject );
         } else if ( alive && currentType != Enums.enemy_type.BOWMAN ) {
             UpdatePosition ();
@@ -44,6 +44,7 @@ public class Enemy : MonoBehaviour {
         switch ( currentType ) {
             case Enums.enemy_type.SWORDMAN:
                 if ( Physics2D.OverlapCircle ( transform.position, 3.0f, LayerMask.NameToLayer ( "Knight" ) ) ) {
+                    print("VIST");
                     transform.position = Vector3.MoveTowards ( transform.position, GameManager.Instance.Knight.transform.position, walkVel * Time.deltaTime );
                 }
                 break;
