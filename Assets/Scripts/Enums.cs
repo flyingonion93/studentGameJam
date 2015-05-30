@@ -19,4 +19,10 @@ public class Enums : MonoBehaviour {
         HIT,
         PUKE
     }
+
+    public enum enemy_type { 
+        BOWMAN,
+        SWORDMAN,
+        HORSEMAN
+    }
 }

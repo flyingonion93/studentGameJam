@@ -415,8 +415,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881472f3631740d4898c7e49dfe697dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPos: {x: 0, y: 0}
   currentInputState: 0
+  alive: 0
+  canAttack: 0
+  spawnPos: {x: 0, y: 0}
   walkVel: 0
 --- !u!1 &1937236257
 GameObject:
@@ -482,6 +484,7 @@ MonoBehaviour:
   _manager: {fileID: 1937236260}
   _managerNavPoint: {fileID: 1937236259}
   _lifeManager: {fileID: 1937236258}
+  _shieldManager: {fileID: 0}
 --- !u!4 &1937236261
 Transform:
   m_ObjectHideFlags: 0

@@ -12,7 +12,6 @@ public class Knight : MonoBehaviour {
         transform.LookAt ( lookVector );
         Debug.DrawRay ( transform.position, lookVector );
         transform.position += transform.forward * moveSpeed * Time.deltaTime;
-        transform.LookAt ( GameManager.Instance.ManagerNavPoint.currentNavPoint );
     }
 
 }
