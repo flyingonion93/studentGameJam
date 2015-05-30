@@ -11,11 +11,11 @@ public class Bowman : Characters {
     }
 
     public override void DetectInput () {
-        bool overlaping = Physics2D.OverlapCircle ( transform.position, 15f, LayerMask.NameToLayer ( "Knight" ) );
-        print ( overlaping.ToString () );
-        if ( overlaping && canAttack ) {
-            StartCoroutine ( "Attack" );
-        }
+        ////bool overlaping = Physics2D.OverlapCircle ( transform.position, 15f,  );
+        //print ( overlaping.ToString () );
+        //if ( overlaping && canAttack ) {
+        //    StartCoroutine ( "Attack" );
+        //}
     }
 
     public override void UpdatePosition () {

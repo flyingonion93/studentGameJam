@@ -4,7 +4,6 @@ using System.Collections;
 public class ShieldManager : MonoBehaviour {
 
     public float powerTime = 5f;
-    public Transform magnetShield, bigShield, littleShield, shieldPos;
     public float radi = 1.8f;
     public int resistance = 10;
 

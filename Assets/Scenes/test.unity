@@ -417,7 +417,7 @@ GameObject:
   - 4: {fileID: 337764627}
   - 58: {fileID: 337764626}
   - 50: {fileID: 337764625}
-  m_Layer: 13
+  m_Layer: 21
   m_Name: PickupMagShield
   m_TagString: MagShield
   m_Icon: {fileID: 1319202362, guid: 0000000000000000d000000000000000, type: 0}
@@ -535,7 +535,7 @@ GameObject:
   m_Icon: {fileID: 1319202362, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &481352863
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -683,6 +683,10 @@ Prefab:
     - target: {fileID: 446956, guid: 8ad9a3b108d63354fb938dda11f8a93a, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 146956, guid: 8ad9a3b108d63354fb938dda11f8a93a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ad9a3b108d63354fb938dda11f8a93a, type: 2}
@@ -1430,9 +1434,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 1776835706}
   - 114: {fileID: 1776835705}
-  m_Layer: 0
+  - 58: {fileID: 1776835708}
+  - 50: {fileID: 1776835707}
+  m_Layer: 8
   m_Name: Knight
-  m_TagString: Untagged
+  m_TagString: Knight
   m_Icon: {fileID: -1500306622, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1462,6 +1468,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!50 &1776835707
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1776835704}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!58 &1776835708
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1776835704}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .5
+  m_Center: {x: 0, y: 0}
 --- !u!1001 &1882795037
 Prefab:
   m_ObjectHideFlags: 0
@@ -1500,6 +1532,14 @@ Prefab:
     - target: {fileID: 493792, guid: 033bf8d9529a1694ea90b957b0ac87c2, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 193792, guid: 033bf8d9529a1694ea90b957b0ac87c2, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 193792, guid: 033bf8d9529a1694ea90b957b0ac87c2, type: 2}
+      propertyPath: m_TagString
+      value: Knight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 033bf8d9529a1694ea90b957b0ac87c2, type: 2}
@@ -1617,7 +1657,7 @@ MonoBehaviour:
   _lifeManager: {fileID: 2082390599}
   _shieldManager: {fileID: 2082390600}
   _squire: {fileID: 1432335417}
-  _knight: {fileID: 0}
+  _knight: {fileID: 1776835705}
   _shield: {fileID: 0}
 --- !u!114 &2082390599
 MonoBehaviour:
@@ -1644,9 +1684,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerTime: 5
-  magnetShield: {fileID: 0}
-  bigShield: {fileID: 0}
-  littleShield: {fileID: 0}
-  shieldPos: {fileID: 0}
   radi: 1.79999995
   resistance: 10

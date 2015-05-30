@@ -25,7 +25,7 @@ public class Shield : MonoBehaviour {
         else if ( col.tag == "King" )
             GameManager.Instance.ShieldManager.DownShield ( 4 );
         else if ( col.tag == "Projectile" )
-            col.rigidbody2D.AddForce ( col.transform.position );
+            col.rigidbody2D.AddForce ( -col.transform.position );
 
     }
 }
