@@ -79,8 +79,9 @@ public class Squire : Characters {
                 print ( "little" );
                 GameManager.Instance.ShieldManager.StartCoroutine( "LittleShieldInstance" );
                 break;
-            case "Clone":
-                GameManager.Instance.Knight.ninjas.gameObject.SetActive ( true );
+            case "Ninjas":
+                //GameManager.Instance.Knight.ninjas.gameObject.SetActive ( true );
+                GameManager.Instance.Knight.StartCoroutine ( "ItsNinjaTime" );
                 break;
             case "BulletTime":
                 break;
