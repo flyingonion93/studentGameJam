@@ -58,120 +58,120 @@ TextureImporter:
     - name: explosion_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 750
-        height: 569
+        x: 7
+        y: 11
+        width: 737
+        height: 549
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: explosion_1
       rect:
         serializedVersion: 2
-        x: 750
-        y: 0
-        width: 750
-        height: 569
+        x: 757
+        y: 11
+        width: 737
+        height: 549
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: explosion_2
       rect:
         serializedVersion: 2
-        x: 1500
-        y: 0
-        width: 750
-        height: 569
+        x: 1507
+        y: 11
+        width: 737
+        height: 549
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: explosion_3
       rect:
         serializedVersion: 2
-        x: 2250
-        y: 0
-        width: 750
-        height: 569
+        x: 2257
+        y: 11
+        width: 737
+        height: 549
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: explosion_4
       rect:
         serializedVersion: 2
-        x: 3000
-        y: 0
-        width: 750
-        height: 569
+        x: 3008
+        y: 11
+        width: 737
+        height: 549
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: explosion_5
       rect:
         serializedVersion: 2
-        x: 3750
-        y: 0
-        width: 750
-        height: 569
+        x: 3757
+        y: 11
+        width: 737
+        height: 549
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: explosion_6
       rect:
         serializedVersion: 2
-        x: 4500
-        y: 0
-        width: 750
-        height: 569
+        x: 4507
+        y: 11
+        width: 737
+        height: 549
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: explosion_7
       rect:
         serializedVersion: 2
-        x: 5250
-        y: 0
-        width: 750
-        height: 569
+        x: 5257
+        y: 11
+        width: 737
+        height: 549
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: explosion_8
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 0
-        width: 750
-        height: 569
+        x: 6007
+        y: 11
+        width: 737
+        height: 549
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: explosion_9
       rect:
         serializedVersion: 2
-        x: 6750
-        y: 0
-        width: 750
-        height: 569
+        x: 6757
+        y: 11
+        width: 737
+        height: 549
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: explosion_10
       rect:
         serializedVersion: 2
-        x: 7500
-        y: 0
-        width: 750
-        height: 569
+        x: 7507
+        y: 11
+        width: 737
+        height: 549
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: explosion_11
       rect:
         serializedVersion: 2
-        x: 8250
-        y: 0
-        width: 750
-        height: 569
+        x: 8257
+        y: 11
+        width: 737
+        height: 549
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
