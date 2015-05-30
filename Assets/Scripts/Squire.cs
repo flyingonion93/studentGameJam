@@ -10,6 +10,7 @@ public class Squire : Characters {
     public void Start () {        
         smallShield.gameObject.SetActive ( false );
         heavyShield.gameObject.SetActive ( false );
+        shotgun.gameObject.SetActive ( false );
         primaryShield.gameObject.SetActive ( true );
         currentShield = primaryShield;
         inverted = false;
@@ -123,8 +124,14 @@ public class Squire : Characters {
                 Destroy ( this.gameObject );
                 break;
             case "Beer":
+                GameManager.Instance.Knight.moveSpeed = 2.0f;
                 break;
         }
+    }
+
+    public IEnumerator Cerveceame () {
+        yield return new WaitForSeconds ( 5.0f );
+        GameManager.Instance.Knight.moveSpeed = 4.0f;
     }
 
     public IEnumerator RevertMagic () {
