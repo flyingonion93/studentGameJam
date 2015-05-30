@@ -5,7 +5,7 @@ public class Squire : Characters {
 
     public Transform smallShield, primaryShield, heavyShield, currentShield, shotgun;
     public int attackValue;
-    protected bool inverted;
+    protected bool inverted, explosive;
 
     public void Start () {        
         smallShield.gameObject.SetActive ( false );
@@ -14,6 +14,7 @@ public class Squire : Characters {
         primaryShield.gameObject.SetActive ( true );
         currentShield = primaryShield;
         inverted = false;
+        explosive = false;
         canAttack = true;
         //print ( "Vida " + GameManager.Instance.LifeManager.life );
         //print ( "Resistencia " + GameManager.Instance.ShieldManager.resistance );
@@ -129,6 +130,7 @@ public class Squire : Characters {
                 Destroy ( col.gameObject );
                 break;
             case "ExplosiveShield":
+                explosive = true;
                 break;
         }
     }
@@ -148,6 +150,7 @@ public class Squire : Characters {
             Vector3 pointA = currentShield.position;
             Vector3 pointB = currentShield.forward;
             yield return StartCoroutine ( MoveObject ( transform, pointA, pointB, 0.3f ) );
+            // COSES
             yield return StartCoroutine ( MoveObject ( transform, pointB, pointA, 0.1f ) );
         }
     }
@@ -161,4 +164,11 @@ public class Squire : Characters {
             yield return null;
         }
     }
+
+    public void OnCollisionEnter2D ( Collision2D coll ) {
+        if ( coll.gameObject.tag == "Enemies" ) { 
+            
+        }
+    }
+
 }
