@@ -38,10 +38,12 @@ public class ShieldManager : MonoBehaviour {
     public IEnumerator LittleShieldInstance () {
         GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( false );
         GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.shotgun.gameObject.SetActive ( false );
         GameManager.Instance.Squire.smallShield.gameObject.SetActive ( true );
         yield return new WaitForSeconds ( 5 );
         GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );
         GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.shotgun.gameObject.SetActive ( false );
         GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( true );
     }
 
@@ -56,5 +58,4 @@ public class ShieldManager : MonoBehaviour {
         GameManager.Instance.Squire.shotgun.gameObject.SetActive ( false );
         GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( true );
     }
-
 }
