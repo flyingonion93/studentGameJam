@@ -14,6 +14,8 @@ public class Squire : Characters {
         currentShield = primaryShield;
         inverted = false;
         canAttack = true;
+        print ( "Vida " + GameManager.Instance.LifeManager.life );
+        print ( "Resistencia " + GameManager.Instance.ShieldManager.resistance );
     }
 
     public void Update () {
@@ -21,6 +23,8 @@ public class Squire : Characters {
             currentInputState = Enums.inputState_nm.NONE;
             DetectInput ();
             UpdatePosition ();
+            //print ( "Vida " + GameManager.Instance.LifeManager.life );
+            //print ( "Resistencia " + GameManager.Instance.ShieldManager.resistance );
         } else
             currentInputState = Enums.inputState_nm.DEAD;
     }
@@ -74,10 +78,10 @@ public class Squire : Characters {
 
     void OnTriggerEnter2D ( Collider2D col ) {        
         switch ( col.tag ) {
-            case "Life":
+            case "LifeUp":
                 GameManager.Instance.LifeManager.UpLife ();
                 break;
-            case "ShieldLife":
+            case "ShieldUp":
                 GameManager.Instance.ShieldManager.UpShield ();
                 break;
             case "MagShield":
