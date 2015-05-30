@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ShieldManager : MonoBehaviour {
 
+    public float powerTime = 5f;
     public Transform magnetShield, bigShield, littleShield, shieldPos;
     public float radi = 1.8f;
     public int resistance = 10;
@@ -18,25 +19,30 @@ public class ShieldManager : MonoBehaviour {
         resistance -= down;
     }
 
-    public void MagnetShieldInstance () {        
+    public IEnumerator MagnetShieldInstance () {
+        GameManager.Instance.Shield.isMagnetic = true;
+        yield return new WaitForSeconds ( 5 );
+        GameManager.Instance.Shield.isMagnetic = false;
     }
 
-    public void BigShieldInstance () {
+    public IEnumerator BigShieldInstance () {
         GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );
         GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( false );
         GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( true );
+        yield return new WaitForSeconds ( 5 );
+        GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );        
+        GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( true );
     }
 
-    public void LittleShieldInstance () {
+    public IEnumerator LittleShieldInstance () {
         GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( false );
         GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( false );
         GameManager.Instance.Squire.smallShield.gameObject.SetActive ( true );
+        yield return new WaitForSeconds ( 5 );
+        GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( true );
     }
 
-    public void MagnetShield () {
-        bool detected = Physics2D.OverlapCircle ( shieldPos.position, radi );
-        if ( detected ) { 
-            //shieldPos.rigidbody2D.AddForce (
-        }
-    }
 }

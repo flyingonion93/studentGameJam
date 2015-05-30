@@ -32,5 +32,11 @@ public class GameManager : osSingleton<GameManager> {
     public Knight Knight {
         get { return _knight; }
     }
+
+    public Shield _shield;
+
+    public Shield Shield {
+        get { return _shield; }
+    }
     #endregion
 }

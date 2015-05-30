@@ -59,7 +59,7 @@ public class Squire : Characters {
         yield return null;
     }
 
-    void OnTriggerEnter2D ( Collider2D col ) {
+    void OnTriggerEnter2D ( Collider2D col ) {        
         switch ( col.tag ) {
             case "Life":
                 GameManager.Instance.LifeManager.UpLife ();
@@ -67,15 +67,17 @@ public class Squire : Characters {
             case "ShieldLife":
                 GameManager.Instance.ShieldManager.UpShield ();
                 break;
-            case "Magnet":
-                GameManager.Instance.ShieldManager.MagnetShield ();
+            case "MagShield":
+                print ( "mag" );
+                GameManager.Instance.ShieldManager.MagnetShieldInstance ();
                 break;
             case "BigShield":
-                print ( "pene" );
-                GameManager.Instance.ShieldManager.BigShieldInstance ();
+                print ( "big" );
+                GameManager.Instance.ShieldManager.StartCoroutine( "BigShieldInstance" );
                 break;
             case "LittleShield":
-                GameManager.Instance.ShieldManager.LittleShieldInstance ();
+                print ( "little" );
+                GameManager.Instance.ShieldManager.StartCoroutine( "LittleShieldInstance" );
                 break;
             case "Clone":
                 GameManager.Instance.Knight.ninjas.gameObject.SetActive ( true );

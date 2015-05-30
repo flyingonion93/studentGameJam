@@ -10,6 +10,8 @@ TagManager:
   - NavPoint
   - LittleShield
   - BigShield
+  - Projectile
+  - MagShield
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
