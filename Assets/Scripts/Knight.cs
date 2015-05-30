@@ -22,7 +22,7 @@ public class Knight : MonoBehaviour {
         while ( true ) {
             Vector3 pointA = transform.position;
             Vector3 pointB = GenerateRandomVector ();
-            yield return StartCoroutine ( MoveObject ( transform, pointA, pointB, 3.0f ) );
+            yield return StartCoroutine ( MoveObject ( transform, pointA, pointB, 6.0f ) );
         }
     }
 

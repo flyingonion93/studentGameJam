@@ -44,13 +44,11 @@ public class Squire : Characters {
         if (x != 0.0 || y != 0.0) {
             float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(90.0f - angle, Vector3.forward);
-    }
-		if (mx != 0.0 || my != 0.0) {
-			var objectPos = Camera.main.WorldToScreenPoint(transform.position);
-			var dir = Input.mousePosition - objectPos; 
-			transform.rotation = Quaternion.Euler (new Vector3(0,0,Mathf.Atan2 (dir.y,dir.x) * Mathf.Rad2Deg+90.0f));
-			
-		}
+        }else if (mx != 0.0 || my != 0.0) {
+            var objectPos = Camera.main.WorldToScreenPoint(transform.position);
+            var dir = Input.mousePosition - objectPos; 
+            transform.rotation = Quaternion.Euler (new Vector3(0,0,Mathf.Atan2 (dir.y,dir.x) * Mathf.Rad2Deg+90.0f));
+        }
         // Attack
         if ( Input.GetButtonDown ( "Attack" ) ) {
             currentInputState = Enums.inputState_nm.ATTACK;
