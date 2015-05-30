@@ -5,7 +5,7 @@ public class ShieldManager : MonoBehaviour {
 
     public float powerTime = 5f;
     public float radi = 1.8f;
-    public int resistance;
+    public int resistance = 10;
 
     public void UpShield () {
         if ( resistance >= 10 )

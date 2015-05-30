@@ -1210,7 +1210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _manager: {fileID: 1937236260}
-  _managerNavPoint: {fileID: 1937236259}
   _lifeManager: {fileID: 1937236258}
   _shieldManager: {fileID: 0}
   _squire: {fileID: 0}
@@ -1219,6 +1218,7 @@ MonoBehaviour:
   _guiManager: {fileID: 0}
   _timeManager: {fileID: 0}
   _soundManager: {fileID: 0}
+  _sceneManager: {fileID: 0}
 --- !u!4 &1937236261
 Transform:
   m_ObjectHideFlags: 0
