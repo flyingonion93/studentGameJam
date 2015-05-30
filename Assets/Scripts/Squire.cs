@@ -4,13 +4,15 @@ using System.Collections;
 public class Squire : Characters {
 
     public Transform smallShield, primaryShield, heavyShield;
-    protected bool inverted;
+    public int attackValue;
+    protected bool inverted, canAttack;
 
     public void Start () {        
         smallShield.gameObject.SetActive ( false );
         heavyShield.gameObject.SetActive ( false );
         primaryShield.gameObject.SetActive ( true );
         inverted = false;
+        canAttack = true;
     }
 
     public void Update () {
@@ -63,7 +65,9 @@ public class Squire : Characters {
 
     // TO DO
     protected override IEnumerator Attack () {
-        yield return null;
+        canAttack = false;
+        yield return new WaitForSeconds ( 0.5f );
+        canAttack = true;
     }
 
     void OnTriggerEnter2D ( Collider2D col ) {        

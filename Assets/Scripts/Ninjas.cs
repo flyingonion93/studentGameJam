@@ -10,7 +10,7 @@ public class Ninjas : MonoBehaviour {
     }
 
 	void Update () {
-        print ( "ninjas" );
+        print ( "ets lo puto crack" );
         transform.position = GameManager.Instance.Knight.transform.position;
         transform.rotation = Quaternion.AngleAxis ( angle, Vector3.forward );
         angle++;
