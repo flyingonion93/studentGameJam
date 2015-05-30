@@ -44,7 +44,8 @@ public class Enemy : MonoBehaviour {
         switch ( currentType ) { 
             case Enums.enemy_type.SWORDMAN:
                 if ( Physics2D.OverlapCircle ( transform.position, 3.0f, LayerMask.NameToLayer("Knight") ) ) {
-                    transform.position = Vector3.MoveTowards ( transform.position, GameManager, walkVel * Time.deltaTime );
+                    Vector3 aux = GameManager.Instance.Knight.transform.position;
+                    transform.position = Vector3.MoveTowards ( transform.position, aux, walkVel * Time.deltaTime );
                 }
                 break;
             case Enums.enemy_type.HORSEMAN:
