@@ -5,7 +5,7 @@ public class Squire : Characters {
 
     public Transform smallShield, primaryShield, heavyShield;
     public int attackValue;
-    protected bool inverted, canAttack;
+    protected bool inverted;
 
     public void Start () {        
         smallShield.gameObject.SetActive ( false );
