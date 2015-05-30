@@ -78,23 +78,32 @@ public class Squire : Characters {
         switch ( col.tag ) {
             case "LifeUp":
                 GameManager.Instance.LifeManager.UpLife ();
+                audio.clip = GameManager.Instance.SoundManager.fxPowerUp;
+                audio.Play ();
                 Destroy (this.gameObject);
                 break;
             case "ShieldUp":
                 GameManager.Instance.ShieldManager.UpShield ();
+                audio.clip = GameManager.Instance.SoundManager.fxPowerUp;
+                audio.Play();
                 Destroy ( this.gameObject );
                 break;
             case "MagShield":
                 GameManager.Instance.ShieldManager.StartCoroutine( "MagnetShieldInstance" );
+
                 Destroy ( this.gameObject );
                 break;
             case "BigShield":
                 GameManager.Instance.ShieldManager.StartCoroutine( "BigShieldInstance" );
+                audio.clip = GameManager.Instance.SoundManager.fxShieldUpgrade;
+                audio.Play();
                 currentShield = heavyShield;
                 Destroy ( this.gameObject );
                 break;
             case "LittleShield":
                 GameManager.Instance.ShieldManager.StartCoroutine( "LittleShieldInstance" );
+                audio.clip = GameManager.Instance.SoundManager.fxShieldUpgrade;
+                audio.Play ();
                 currentShield = smallShield;
                 Destroy ( this.gameObject );
                 break;
