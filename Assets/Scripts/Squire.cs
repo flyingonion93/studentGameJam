@@ -4,6 +4,7 @@ using System.Collections;
 public class Squire : Characters {
 
     public Transform smallShield, primaryShield, heavyShield;
+    public int attackValue;
     protected bool inverted;
 
     public void Start () {        
@@ -11,6 +12,7 @@ public class Squire : Characters {
         heavyShield.gameObject.SetActive ( false );
         primaryShield.gameObject.SetActive ( true );
         inverted = false;
+        canAttack = true;
     }
 
     public void Update () {
@@ -50,8 +52,10 @@ public class Squire : Characters {
 			
 		}
         // Attack
-        if ( Input.GetButtonDown ( "Attack" ) )
+        if ( Input.GetButtonDown ( "Attack" ) ) {
             currentInputState = Enums.inputState_nm.ATTACK;
+            StartCoroutine ( Attack() );
+        }
     }
 
     public override void UpdatePosition () {
@@ -63,7 +67,10 @@ public class Squire : Characters {
 
     // TO DO
     protected override IEnumerator Attack () {
-        yield return null;
+        StartCoroutine ( NewPoint() );
+        canAttack = false;
+        yield return new WaitForSeconds ( 0.5f );
+        canAttack = true;
     }
 
     void OnTriggerEnter2D ( Collider2D col ) {        
@@ -76,7 +83,7 @@ public class Squire : Characters {
                 break;
             case "MagShield":
                 print ( "mag" );
-                GameManager.Instance.ShieldManager.MagnetShieldInstance ();
+                GameManager.Instance.ShieldManager.StartCoroutine( "MagnetShieldInstance" );
                 break;
             case "BigShield":
                 print ( "big" );
@@ -100,6 +107,25 @@ public class Squire : Characters {
                 break;
             case "Beer":
                 break;
+        }
+    }
+
+    public IEnumerator NewPoint () {
+        while ( true ) {
+            Vector3 pointA = GameManager.Instance.Shield.transform.position;
+            Vector3 pointB = GameManager.Instance.Shield.transform.forward;
+            yield return StartCoroutine ( MoveObject ( transform, pointA, pointB, 0.3f ) );
+            yield return StartCoroutine ( MoveObject ( transform, pointB, pointA, 0.1f ) );
+        }
+    }
+
+    public IEnumerator MoveObject ( Transform thisTransform, Vector3 startPos, Vector3 endPos, float time ) {
+        var i = 0.0f;
+        var rate = 1.0f / time;
+        while ( i < 1.0f ) {
+            i += Time.deltaTime * rate;
+            thisTransform.position = Vector3.Lerp ( startPos, endPos, i );
+            yield return null;
         }
     }
 }
