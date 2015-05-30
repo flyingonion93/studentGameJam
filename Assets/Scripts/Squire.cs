@@ -128,6 +128,8 @@ public class Squire : Characters {
                 StartCoroutine ( "Cerveceame" );
                 Destroy ( col.gameObject );
                 break;
+            case "ExplosiveShield":
+                break;
         }
     }
 
