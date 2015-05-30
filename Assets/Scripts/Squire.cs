@@ -6,9 +6,10 @@ public class Squire : Characters {
     public Transform smallShield, primaryShield, heavyShield;
     protected bool inverted;
 
-    public void Start () {
+    public void Start () {        
         smallShield.gameObject.SetActive ( false );
         heavyShield.gameObject.SetActive ( false );
+        primaryShield.gameObject.SetActive ( true );
         inverted = false;
     }
 
