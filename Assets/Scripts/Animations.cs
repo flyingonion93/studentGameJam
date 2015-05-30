@@ -17,6 +17,11 @@ public  class Animations : MonoBehaviour {
     }
 
     public void Update () {
+        // Attack
+        if ( _character.currentInputState == Enums.inputState_nm.ATTACK && currentAnim != Enums.anim_nm.ATTACK ) {
+            currentAnim = Enums.anim_nm.ATTACK;
+            _animator.SetInteger ( _animState, 3 );
+        }
         // Hit
         if ( hit && currentAnim != Enums.anim_nm.HIT ) {
             currentAnim = Enums.anim_nm.HIT;
