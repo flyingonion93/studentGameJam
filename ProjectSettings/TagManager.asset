@@ -13,11 +13,8 @@ TagManager:
   - Projectile
   - MagShield
   - Ninjas
-<<<<<<< HEAD
   - Shotgun
   - 
-=======
->>>>>>> a912eb9129659163764945b1240b18ba9f231f14
   - LifeUp
   - ShieldUp
   - 
@@ -43,7 +40,7 @@ TagManager:
   User Layer 19: InvertControl
   User Layer 20: Beer
   User Layer 21: Pickup
-  User Layer 22: 
+  User Layer 22: Boundaries
   User Layer 23: 
   User Layer 24: 
   User Layer 25: 
@@ -53,4 +50,24 @@ TagManager:
   User Layer 29: 
   User Layer 30: 
   User Layer 31: 
-  m_SortingLayers: []
+  m_SortingLayers:
+  - name: Default
+    userID: 0
+    uniqueID: 0
+    locked: 0
+  - name: New Layer 1
+    userID: 1
+    uniqueID: 1159818209
+    locked: 0
+  - name: Ground
+    userID: 2
+    uniqueID: 2303948201
+    locked: 0
+  - name: Character
+    userID: 3
+    uniqueID: 3270960097
+    locked: 0
+  - name: Object
+    userID: 4
+    uniqueID: 1126653149
+    locked: 0
