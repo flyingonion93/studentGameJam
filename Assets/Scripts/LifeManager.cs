@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LifeManager : MonoBehaviour {
 
-    public int life = 5;
+    public int life;
     [HideInInspector] public int lifeUp;
 
     public void UpLife () {

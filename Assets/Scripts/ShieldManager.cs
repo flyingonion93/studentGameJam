@@ -5,7 +5,7 @@ public class ShieldManager : MonoBehaviour {
 
     public float powerTime = 5f;
     public float radi = 1.8f;
-    public int resistance = 5;
+    public int resistance;
 
     public void UpShield () {
         if ( resistance >= 10 )
@@ -16,6 +16,8 @@ public class ShieldManager : MonoBehaviour {
 
     public void DownShield ( int down ) {
         resistance -= down;
+        //if ( resistance <= 0 )
+
     }
 
     //public IEnumerator MagnetShieldInstance () {
