@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Knight : MonoBehaviour {
 
     public Transform LeftSide, RigthSide, currentNavPoint;
@@ -17,28 +18,9 @@ public class Knight : MonoBehaviour {
         if ( GameManager.Instance.LifeManager.life <= 0 ) {
             GameManager.Instance.Squire.currentInputState = Enums.inputState_nm.DEAD;
         }
-        print (moveSpeed);
-        StartCoroutine ( "NewNavPoint" );
-    }
-
-    public IEnumerator NewNavPoint () {
-        Vector3 pointA = transform.position;
-        Vector3 pointB = GenerateRandomVector ();
-        while ( true ) {
-            yield return StartCoroutine ( MoveObject ( transform, pointA, pointB, 6.0f ) );
-            pointA = pointB;
-            pointB = GenerateRandomVector ();
-        }
-    }
-
-    public IEnumerator MoveObject ( Transform thisTransform, Vector3 startPos, Vector3 endPos, float time ) {
-        var i = 0.0f;
-        var rate = 1.0f / time;
-        while ( i < 1.0f ) {
-            i += Time.deltaTime * rate;
-            thisTransform.position = Vector3.Lerp ( startPos, endPos, i );
-            yield return null;
-        }
+        transform.position = Vector3.MoveTowards ( transform.position, currentNavPoint.position, moveSpeed * Time.deltaTime );
+        if ( transform.position == currentNavPoint.position )
+            currentNavPoint.position = GenerateRandomVector ();
     }
 
     public IEnumerator ItsNinjaTime () {

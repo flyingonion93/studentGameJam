@@ -1223,6 +1223,10 @@ Prefab:
       propertyPath: RigthSide
       value: 
       objectReference: {fileID: 1582820082}
+    - target: {fileID: 5009256, guid: 033bf8d9529a1694ea90b957b0ac87c2, type: 2}
+      propertyPath: m_Mass
+      value: 9.99999975e-05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 033bf8d9529a1694ea90b957b0ac87c2, type: 2}
   m_RootGameObject: {fileID: 1776835704}
@@ -1501,7 +1505,7 @@ GameObject:
   - 61: {fileID: 1520347663}
   - 50: {fileID: 1520347665}
   m_Layer: 22
-  m_Name: RollCenter
+  m_Name: RollBottom
   m_TagString: Untagged
   m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1696,7 +1700,7 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 1245128991}
   m_GameObject: {fileID: 1776835704}
-  m_Mass: 1
+  m_Mass: 9.99999975e-05
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -1908,6 +1912,7 @@ MonoBehaviour:
   _guiManager: {fileID: 0}
   _timeManager: {fileID: 0}
   _soundManager: {fileID: 2082390601}
+  _sceneManager: {fileID: 0}
 --- !u!114 &2082390599
 MonoBehaviour:
   m_ObjectHideFlags: 0
