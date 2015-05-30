@@ -13,12 +13,8 @@ TagManager:
   - Projectile
   - MagShield
   - Ninjas
-<<<<<<< HEAD
-  - Shotgun
-=======
   - LifeUp
   - ShieldUp
->>>>>>> origin/master
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -52,20 +48,4 @@ TagManager:
   User Layer 29: 
   User Layer 30: 
   User Layer 31: 
-  m_SortingLayers:
-  - name: Default
-    userID: 0
-    uniqueID: 0
-    locked: 0
-  - name: Ground
-    userID: 1
-    uniqueID: 761905289
-    locked: 0
-  - name: Character
-    userID: 2
-    uniqueID: 1310818091
-    locked: 0
-  - name: Objects
-    userID: 3
-    uniqueID: 1081395613
-    locked: 0
+  m_SortingLayers: []
