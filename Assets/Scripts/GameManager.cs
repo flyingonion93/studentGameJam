@@ -18,6 +18,11 @@ public class GameManager : osSingleton<GameManager> {
         get { return _lifeManager; }
     }
 
+	public Animations _animations;
+	public Animations Animations{
+		get{ return _animations;}
+	}
+
     public ShieldManager _shieldManager;
     public ShieldManager ShieldManager {
         get { return _shieldManager; }

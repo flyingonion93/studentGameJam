@@ -8,7 +8,8 @@ public class Enums : MonoBehaviour {
         THROW,
         ATTACK,
         WALK,
-        DEAD
+        DEAD,
+		HIT
     }
 
     public enum anim_nm { 

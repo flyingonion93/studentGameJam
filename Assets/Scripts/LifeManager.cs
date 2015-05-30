@@ -19,5 +19,6 @@ public class LifeManager : MonoBehaviour {
 
     public void DownLife ( int down ) {
         life -= down;
+		GameManager.Instance.Animations.damaged = true;
     }
 }

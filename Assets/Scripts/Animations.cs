@@ -7,6 +7,7 @@ public  class Animations : MonoBehaviour {
     protected Enums.anim_nm currentAnim;
     protected int characterAnimState = Animator.StringToHash ( "controlAnimState" );
     protected int _animState;
+	public bool damaged;
     private Characters _character;
 
     public virtual void Awake () {
@@ -26,5 +27,11 @@ public  class Animations : MonoBehaviour {
             currentAnim = Enums.anim_nm.IDLE;
             _animator.SetInteger ( _animState, 0);
         }
+		//Damage
+		if (damaged && currentAnim != Enums.anim_nm.HIT) {
+			currentAnim = Enums.anim_nm.HIT;
+			_animator.SetInteger(_animState, 2);
+			damaged = false;
+		}
     }
 }
