@@ -38,5 +38,17 @@ public class GameManager : osSingleton<GameManager> {
     public Shield Shield {
         get { return _shield; }
     }
+
+    public GUIManager _guiManager;
+
+    public GUIManager Manager {
+        get { return _guiManager; }
+    }
+
+    public TimeManager _timeManager;
+
+    public TimeManager TimeManager {
+        get { return _timeManager; }
+    }
     #endregion
 }

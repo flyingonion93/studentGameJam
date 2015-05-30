@@ -3,17 +3,14 @@ using System.Collections;
 
 public class Squire : Characters {
 
-<<<<<<< HEAD
-    public Transform smallShield, primaryShield, heavyShield, currentShield;
-=======
-    public Transform smallShield, primaryShield, heavyShield, shotgun;
->>>>>>> origin/master
+    public Transform smallShield, primaryShield, heavyShield, shotgun, currentShield;
     public int attackValue;
     protected bool inverted;
 
     public void Start () {        
         smallShield.gameObject.SetActive ( false );
         heavyShield.gameObject.SetActive ( false );
+        shotgun.gameObject.SetActive ( false );
         primaryShield.gameObject.SetActive ( true );
         currentShield = primaryShield;
         inverted = false;
