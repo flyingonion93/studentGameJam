@@ -209,11 +209,93 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 9573390, guid: a5f38963717aeec4598f3490be6c5ccf, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bc0eadfbe9e963646b30fd10c5fba251, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5f38963717aeec4598f3490be6c5ccf, type: 2}
   m_RootGameObject: {fileID: 1851388385}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &752712778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 752712782}
+  - 212: {fileID: 752712781}
+  - 58: {fileID: 752712780}
+  - 95: {fileID: 752712779}
+  m_Layer: 0
+  m_Name: Khame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &752712779
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 752712778}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b44395f01f689fb43a7a0cdcb592ceff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!58 &752712780
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 752712778}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .430000007
+  m_Center: {x: 0, y: -.219999999}
+--- !u!212 &752712781
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 752712778}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 2c2a0aba23c84fb4390563abded3b114, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &752712782
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 752712778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.29499996, y: 1.40699995, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1001 &1323916269
 Prefab:
   m_ObjectHideFlags: 0
@@ -359,6 +441,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5856534, guid: f43b61b1d3754de4a881e3cfdbaabc72, type: 2}
+      propertyPath: m_Radius
+      value: 2.32999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856534, guid: f43b61b1d3754de4a881e3cfdbaabc72, type: 2}
+      propertyPath: m_Center.x
+      value: .0199999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856534, guid: f43b61b1d3754de4a881e3cfdbaabc72, type: 2}
+      propertyPath: m_Center.y
+      value: -.349999994
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f43b61b1d3754de4a881e3cfdbaabc72, type: 2}
   m_RootGameObject: {fileID: 1994758566}
@@ -440,8 +534,8 @@ MonoBehaviour:
   alive: 0
   canAttack: 0
   spawnPos: {x: 0, y: 0}
-  walkVel: 2
-  arrow: {fileID: 1849277027}
+  walkVel: 0
+  arrow: {fileID: 0}
   knight: {fileID: 0}
   cooldownTime: 2
 --- !u!4 &1849277027
@@ -485,7 +579,7 @@ Animator:
   m_GameObject: {fileID: 1851388385}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b1e043738e990a24d91e19b4e4aa2b0e, type: 2}
+  m_Controller: {fileID: 9100000, guid: bc0eadfbe9e963646b30fd10c5fba251, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -556,6 +650,9 @@ MonoBehaviour:
   canAttack: 0
   spawnPos: {x: 0, y: 0}
   walkVel: 0
+  smallShield: {fileID: 0}
+  primaryShield: {fileID: 0}
+  heavyShield: {fileID: 0}
 --- !u!1 &1937236257
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,6 +718,8 @@ MonoBehaviour:
   _managerNavPoint: {fileID: 1937236259}
   _lifeManager: {fileID: 1937236258}
   _shieldManager: {fileID: 0}
+  _squire: {fileID: 0}
+  _knight: {fileID: 0}
 --- !u!4 &1937236261
 Transform:
   m_ObjectHideFlags: 0
@@ -677,8 +776,8 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: 1.19000006
-  m_Center: {x: 0, y: 0}
+  m_Radius: 2.32999992
+  m_Center: {x: .0199999996, y: -.349999994}
 --- !u!212 &1994758569
 SpriteRenderer:
   m_ObjectHideFlags: 0
