@@ -3,18 +3,19 @@ using System.Collections;
 
 public class Squire : Characters {
 
-    public Transform smallShield, primaryShield, heavyShield, shotgun, currentShield;
+    public Transform smallShield, primaryShield, heavyShield, currentShield, shotgun;
     public int attackValue;
     protected bool inverted;
 
     public void Start () {        
         smallShield.gameObject.SetActive ( false );
         heavyShield.gameObject.SetActive ( false );
-        shotgun.gameObject.SetActive ( false );
         primaryShield.gameObject.SetActive ( true );
         currentShield = primaryShield;
         inverted = false;
         canAttack = true;
+        //print ( "Vida " + GameManager.Instance.LifeManager.life );
+        //print ( "Resistencia " + GameManager.Instance.ShieldManager.resistance );
     }
 
     public void Update () {
@@ -75,33 +76,31 @@ public class Squire : Characters {
 
     void OnTriggerEnter2D ( Collider2D col ) {        
         switch ( col.tag ) {
-            case "Life":
+            case "LifeUp":
                 GameManager.Instance.LifeManager.UpLife ();
+                Destroy (this.gameObject);
                 break;
-            case "ShieldLife":
+            case "ShieldUp":
                 GameManager.Instance.ShieldManager.UpShield ();
+                Destroy ( this.gameObject );
                 break;
             case "MagShield":
-                print ( "mag" );
                 GameManager.Instance.ShieldManager.StartCoroutine( "MagnetShieldInstance" );
+                Destroy ( this.gameObject );
                 break;
             case "BigShield":
-                print ( "big" );
                 GameManager.Instance.ShieldManager.StartCoroutine( "BigShieldInstance" );
                 currentShield = heavyShield;
+                Destroy ( this.gameObject );
                 break;
             case "LittleShield":
-                print ( "little" );
                 GameManager.Instance.ShieldManager.StartCoroutine( "LittleShieldInstance" );
                 currentShield = smallShield;
+                Destroy ( this.gameObject );
                 break;
             case "PickupShotgun":
-                print ( "shotgun" );
                 GameManager.Instance.ShieldManager.StartCoroutine ( "ShotgunInstance" );
-                break;
-            case "Ninjas":
-                //GameManager.Instance.Knight.ninjas.gameObject.SetActive ( true );
-                GameManager.Instance.Knight.StartCoroutine ( "ItsNinjaTime" );
+                Destroy ( this.gameObject );
                 break;
             case "BulletTime":
                 break;
@@ -111,10 +110,17 @@ public class Squire : Characters {
                 break;
             case "InvertControl":
                 inverted = true;
+                StartCoroutine ( "RevertMagic" );
+                Destroy ( this.gameObject );
                 break;
             case "Beer":
                 break;
         }
+    }
+
+    public IEnumerator RevertMagic () {
+        yield return new WaitForSeconds ( 5.0f );
+        inverted = false;
     }
 
     public IEnumerator NewPoint () {

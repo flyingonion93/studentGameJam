@@ -60,9 +60,7 @@
     <Compile Include="Assets\Scripts\Bowman.cs" />
     <Compile Include="Assets\Scripts\Camara.cs" />
     <Compile Include="Assets\Scripts\Characters.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enums.cs" />
-    <Compile Include="Assets\Scripts\GUIManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Knight.cs" />
     <Compile Include="Assets\Scripts\LifeManager.cs" />
@@ -70,12 +68,10 @@
     <Compile Include="Assets\Scripts\NavPointBehaviour.cs" />
     <Compile Include="Assets\Scripts\Ninjas.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
-    <Compile Include="Assets\Scripts\RandomVector.cs" />
     <Compile Include="Assets\Scripts\Shield.cs" />
     <Compile Include="Assets\Scripts\ShieldManager.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Squire.cs" />
-    <Compile Include="Assets\Scripts\TimeManager.cs" />
     <Compile Include="Assets\Scripts\osSingleton.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
