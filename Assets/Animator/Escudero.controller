@@ -46,7 +46,7 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
---- !u!1101 &110175520
+--- !u!1101 &110113752
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
@@ -77,7 +77,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 8482e796e2721c94ea60414b4b4e6a5f, type: 2}
   m_ParentStateMachine: {fileID: 110702512}
-  m_Position: {x: 228, y: 48, z: 0}
+  m_Position: {x: 264, y: 36, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -129,12 +129,12 @@ StateMachine:
       first: {fileID: 0}
       second:
       - {fileID: 110113712}
-      - {fileID: 110175520}
-    data:
-      first: {fileID: 110247902}
-      second: []
+      - {fileID: 110113752}
     data:
       first: {fileID: 110271614}
+      second: []
+    data:
+      first: {fileID: 110247902}
       second: []
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 60, y: 96, z: 0}

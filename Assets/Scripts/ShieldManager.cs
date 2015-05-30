@@ -22,11 +22,11 @@ public class ShieldManager : MonoBehaviour {
         Instantiate ( magnetShield, shieldPos.position, Quaternion.identity );
     }
 
-    public void BigShieldInstance () { 
-
+    public void BigShieldInstance () {
+        Instantiate ( bigShield, shieldPos.position, Quaternion.identity );
     }
 
-    public void LittleShieldInstance () { 
-
+    public void LittleShieldInstance () {
+        Instantiate ( littleShield, shieldPos.position, Quaternion.identity );
     }
 }
