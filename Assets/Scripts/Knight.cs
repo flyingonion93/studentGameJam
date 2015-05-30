@@ -4,6 +4,7 @@ using System.Collections;
 public class Knight : MonoBehaviour {
     public float moveSpeed = 4.0f;
     public Transform ninjas;
+    protected float temps = 3;
 
     public void Start () {
         ninjas.gameObject.SetActive ( false );
@@ -16,8 +17,11 @@ public class Knight : MonoBehaviour {
         transform.position += lookVector * moveSpeed * Time.deltaTime;
     }
 
-    protected void ItsNinjaTime () { 
-        
-    }
+    protected void ItsNinjaTime () {
+        float currentTime = 0;
+        while ( temps > currentTime ) {
+            currentTime += Time.deltaTime;
 
+        }
+    }
 }
