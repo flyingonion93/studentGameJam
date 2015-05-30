@@ -1,68 +1,76 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Squire : MonoBehaviour {
+public class Squire : Characters {
 
-    [HideInInspector] public Vector2 spawnPos;
-    [HideInInspector] public Enums.inputState_nm currentInputState;
-    public float walkVel;
-    protected Transform _transform;
-    protected bool alive, inverted;
-    protected Vector3 movementValue;
+    protected bool inverted;
 
     public void Start () {
-        alive = true;
         inverted = false;
     }
 
     public void Update () {
-        if ( GameManager.Instance.LifeManager.life > 0 ) {
+        //if ( GameManager.Instance.LifeManager.life > 0 ) {
             currentInputState = Enums.inputState_nm.NONE;
             DetectInput ();
             UpdatePosition ();
-        } else
-            currentInputState = Enums.inputState_nm.DEAD;
+        //} else
+        //    currentInputState = Enums.inputState_nm.DEAD;
     }
 
-    protected void DetectInput () {
-        float movementValueH = Input.GetAxis ("Horizontal");
-        float movementValueV = Input.GetAxis ("Vertical");
+    public override void DetectInput () {
+        float movementValueH = Input.GetAxis ( "Horizontal" );
+        float movementValueV = Input.GetAxis ( "Vertical" );
         if ( inverted )
             movementValue = new Vector3 ( -movementValueH, -movementValueV, 0.0f ) * 0.25f;
-        else 
+        else
             movementValue = new Vector3 ( movementValueH, movementValueV, 0.0f ) * 0.25f;
 
         // Move
         if ( ( movementValue.x != 0 ) || ( movementValue.y != 0 ) )
             currentInputState = Enums.inputState_nm.WALK;
 
+        // Rotate
+        var x = Input.GetAxis("HorizontalS");
+        var y = Input.GetAxis("VerticalS");
+        if (x != 0.0 || y != 0.0) {
+            float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(90.0f - angle, Vector3.forward);
+    }
+
         // Attack
         if ( Input.GetButtonDown ( "Attack" ) )
             currentInputState = Enums.inputState_nm.ATTACK;
     }
 
-    protected void UpdatePosition () {
+    public override void UpdatePosition () {
         if ( !alive )
             return;
         if ( currentInputState == Enums.inputState_nm.WALK )
             Walk ();
     }
 
-    protected void Walk () {
-        transform.position += movementValue;
+    // TO DO
+    protected override IEnumerator Attack () {
+        yield return null;
     }
 
     void OnTriggerEnter2D ( Collider2D col ) {
         switch ( col.tag ) {
             case "Life":
+                GameManager.Instance.LifeManager.UpLife ();
                 break;
             case "ShieldLife":
+                GameManager.Instance.ShieldManager.UpShield ();
                 break;
             case "Magnet":
+                GameManager.Instance.ShieldManager.MagnetShieldInstance ();
                 break;
             case "BigShield":
+                GameManager.Instance.ShieldManager.BigShieldInstance ();
                 break;
             case "LittleShield":
+                GameManager.Instance.ShieldManager.LittleShieldInstance ();
                 break;
             case "Clone":
                 break;

@@ -22,8 +22,7 @@ public class ManagerNavPoint : MonoBehaviour {
         Instantiate ( currentNavPoint, randVector, Quaternion.identity );
     }
 
-    protected Vector3 GenerateRandomVector () { 
-        Vector3 knightVec = knightPos.position;
+    protected Vector3 GenerateRandomVector () {
         float randX = Random.Range ( LeftSide.position.x, RigthSide.position.x );
         float randY = Random.Range ( knightPos.position.y - 4, knightPos.position.y + 8 );
         Vector3 posVec = new Vector3 ( randX, randY, 0 );

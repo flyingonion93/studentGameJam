@@ -7,9 +7,9 @@ public class Knight : MonoBehaviour {
 
     public void Update () {
         Vector3 lookVector = GameManager.Instance.ManagerNavPoint.currentNavPoint.position;
-        lookVector.z = 0.0f;
+        lookVector.z = 0f;
         transform.LookAt ( lookVector );
-        Debug.DrawRay ( transform.position, GameManager.Instance.ManagerNavPoint.currentNavPoint.position, Color.cyan );
+        Debug.DrawRay ( transform.position, lookVector );
         transform.position += transform.forward * moveSpeed * Time.deltaTime;
     }
 
