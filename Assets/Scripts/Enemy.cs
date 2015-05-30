@@ -49,6 +49,13 @@ public class Enemy : MonoBehaviour {
                 }
                 break;
             case Enums.enemy_type.HORSEMAN:
+                if ( transform.position == Left.position ) {
+                    Vector3 aux = new Vector3 ( Rigth.position.x, GameManager.Instance.Knight.transform.position.y, Rigth.position.z );
+                    transform.position = Vector3.MoveTowards ( transform.position, aux, walkVel * Time.deltaTime );
+                } else {
+                    Vector3 aux = new Vector3 ( Left.position.x, GameManager.Instance.Knight.transform.position.y, Rigth.position.z );
+                    transform.position = Vector3.MoveTowards ( transform.position, aux, walkVel * Time.deltaTime );
+                }
                 break;
         }
     }
