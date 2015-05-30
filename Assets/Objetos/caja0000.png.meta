@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: b08621175a9e5d040a4189545deaa0ef
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: caja0000_0
+    21300002: caja0000_1
+    21300004: caja0000_2
+    21300006: caja0000_3
+    21300008: caja0000_4
+    21300010: caja0000_5
+    21300012: caja0000_6
+    21300014: caja0000_7
+    21300016: caja0000_8
+    21300018: caja0000_9
+    21300020: caja0000_10
+    21300022: caja0000_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: caja0000_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 241
+        height: 288
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caja0000_1
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 0
+        width: 209
+        height: 288
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caja0000_2
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 0
+        width: 220
+        height: 288
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caja0000_3
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 0
+        width: 241
+        height: 288
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caja0000_4
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 0
+        width: 217
+        height: 288
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caja0000_5
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 0
+        width: 185
+        height: 288
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caja0000_6
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 0
+        width: 241
+        height: 288
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caja0000_7
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 0
+        width: 220
+        height: 288
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caja0000_8
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 0
+        width: 192
+        height: 288
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caja0000_9
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 0
+        width: 241
+        height: 288
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caja0000_10
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 0
+        width: 216
+        height: 288
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caja0000_11
+      rect:
+        serializedVersion: 2
+        x: 3343
+        y: 0
+        width: 185
+        height: 288
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
