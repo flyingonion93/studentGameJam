@@ -2313,7 +2313,8 @@ Prefab:
       propertyPath: _knight
       value: 
       objectReference: {fileID: 1776835705}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: ea13e79055584784da3c74172fc056ed, type: 2}
   m_RootGameObject: {fileID: 2082390595}
   m_IsPrefabParent: 0
@@ -2353,7 +2354,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2082390596}
-  - 114: {fileID: 2082390597}
   - 114: {fileID: 2082390598}
   - 114: {fileID: 2082390600}
   - 114: {fileID: 2082390599}
@@ -2377,23 +2377,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!114 &2082390597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11437736, guid: ea13e79055584784da3c74172fc056ed,
-    type: 2}
-  m_PrefabInternal: {fileID: 2055110154}
-  m_GameObject: {fileID: 2082390595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 602256b284ebaf14da93d167477c85f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LeftSide: {fileID: 663064049}
-  RigthSide: {fileID: 1582820082}
-  knightPos: {fileID: 1776835706}
-  currentNavPoint: {fileID: 416186, guid: 7ad8ece88a90a0c408149984d665ec29, type: 2}
-  navPointOnScreen: 0
 --- !u!114 &2082390598
 MonoBehaviour:
   m_ObjectHideFlags: 0
