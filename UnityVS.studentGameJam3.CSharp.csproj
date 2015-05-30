@@ -56,6 +56,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Animations.cs" />
+    <Compile Include="Assets\Scripts\Bowman.cs" />
     <Compile Include="Assets\Scripts\Characters.cs" />
     <Compile Include="Assets\Scripts\Enums.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -64,6 +66,7 @@
     <Compile Include="Assets\Scripts\ManagerNavPoint.cs" />
     <Compile Include="Assets\Scripts\NavPointBehaviour.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Shield.cs" />
     <Compile Include="Assets\Scripts\ShieldManager.cs" />
     <Compile Include="Assets\Scripts\Squire.cs" />
     <Compile Include="Assets\Scripts\osSingleton.cs" />

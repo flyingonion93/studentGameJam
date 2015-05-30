@@ -18,12 +18,19 @@ public class ShieldManager : MonoBehaviour {
         resistance -= down;
     }
 
-    public void BigShieldInstance () { 
-
+    public void MagnetShieldInstance () {        
     }
 
-    public void LittleShieldInstance () { 
+    public void BigShieldInstance () {
+        GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( true );
+    }
 
+    public void LittleShieldInstance () {
+        GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.smallShield.gameObject.SetActive ( true );
     }
 
     public void MagnetShield () {
