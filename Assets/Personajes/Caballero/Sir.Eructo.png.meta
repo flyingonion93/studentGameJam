@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: f2901c9302e88cf469f4db8b76c374f0
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sir.Eructo_0
+    21300002: Sir.Eructo_1
+    21300004: Sir.Eructo_2
+    21300006: Sir.Eructo_3
+    21300008: Sir.Eructo_4
+    21300010: Sir.Eructo_5
+    21300012: Sir.Eructo_6
+    21300014: Sir.Eructo_7
+    21300016: Sir.Eructo_2
+    21300018: Sir.Eructo_5
+    21300020: Sir.Eructo_15
+    21300022: Sir.Eructo_2
+    21300024: Sir.Eructo_3
+    21300026: Sir.Eructo_13
+    21300028: Sir.Eructo_14
+    21300030: Sir.Eructo_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 140
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sir.Eructo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 424
+        height: 374
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sir.Eructo_1
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 0
+        width: 424
+        height: 374
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sir.Eructo_6
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 0
+        width: 424
+        height: 374
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sir.Eructo_7
+      rect:
+        serializedVersion: 2
+        x: 2999
+        y: 0
+        width: 416
+        height: 374
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sir.Eructo_2
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 0
+        width: 424
+        height: 374
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sir.Eructo_3
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 1
+        width: 424
+        height: 372
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sir.Eructo_4
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 0
+        width: 424
+        height: 374
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sir.Eructo_5
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 0
+        width: 424
+        height: 374
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
