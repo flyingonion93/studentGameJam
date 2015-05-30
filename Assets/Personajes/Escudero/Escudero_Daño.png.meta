@@ -88,8 +88,8 @@ TextureImporter:
         y: 0
         width: 296
         height: 394
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Escudero_Da\xF1o_3"
       rect:
@@ -98,8 +98,8 @@ TextureImporter:
         y: 0
         width: 296
         height: 394
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Escudero_Da\xF1o_7"
       rect:
@@ -108,8 +108,8 @@ TextureImporter:
         y: 0
         width: 316
         height: 394
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Escudero_Da\xF1o_8"
       rect:
@@ -118,8 +118,8 @@ TextureImporter:
         y: 0
         width: 319
         height: 394
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Escudero_Da\xF1o_6"
       rect:
@@ -178,8 +178,8 @@ TextureImporter:
         y: 0
         width: 296
         height: 394
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Escudero_Da\xF1o_2"
       rect:
@@ -188,8 +188,8 @@ TextureImporter:
         y: 0
         width: 296
         height: 394
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Escudero_Da\xF1o_4"
       rect:
@@ -198,8 +198,8 @@ TextureImporter:
         y: 0
         width: 328
         height: 394
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Escudero_Da\xF1o_5"
       rect:
@@ -208,8 +208,8 @@ TextureImporter:
         y: 0
         width: 334
         height: 394
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Escudero_Da\xF1o_6"
       rect:
@@ -218,8 +218,8 @@ TextureImporter:
         y: 0
         width: 329
         height: 394
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Escudero_Da\xF1o_9"
       rect:
@@ -228,8 +228,8 @@ TextureImporter:
         y: 0
         width: 317
         height: 394
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Escudero_Da\xF1o_10"
       rect:
@@ -238,8 +238,8 @@ TextureImporter:
         y: 0
         width: 296
         height: 394
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
