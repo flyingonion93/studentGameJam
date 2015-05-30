@@ -76,7 +76,7 @@ public class Squire : Characters {
                 break;
             case "MagShield":
                 print ( "mag" );
-                GameManager.Instance.ShieldManager.MagnetShieldInstance ();
+                GameManager.Instance.ShieldManager.StartCoroutine( "MagnetShieldInstance" );
                 break;
             case "BigShield":
                 print ( "big" );

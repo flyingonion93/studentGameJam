@@ -12,9 +12,7 @@ public class Knight : MonoBehaviour {
 
     public void Update () {
         // FALTA COMPROVAR LA SALUT
-        //Vector3 lookVector = new Vector3 (1, 1, 0);
-        //transform.LookAt ( GameManager.Instance.ManagerNavPoint.currentNavPoint.position );
-        //transform.position += lookVector * moveSpeed * Time.deltaTime;
+        GameManager.Instance.ManagerNavPoint.StartCoroutine ( "MoveObject" );
     }
 
     public IEnumerator ItsNinjaTime () {
