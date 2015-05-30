@@ -10,14 +10,22 @@ public class ShieldManager : MonoBehaviour {
     public void UpShield () {
         if ( resistance >= 10 )
             resistance = 10;
-        else
+        else if ( resistance == 0 ) {
+            resistance = 10;
+            GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( true );
+        } else
             resistance++;
     }
 
     public void DownShield ( int down ) {
         resistance -= down;
-        //if ( resistance <= 0 )
-
+        if ( resistance <= 0 ) {
+            // Music
+            GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );
+            GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( false );
+            GameManager.Instance.Squire.shotgun.gameObject.SetActive ( false );
+            resistance = 0;
+        }
     }
 
     //public IEnumerator MagnetShieldInstance () {
