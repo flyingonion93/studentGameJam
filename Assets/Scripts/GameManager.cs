@@ -17,5 +17,10 @@ public class GameManager : osSingleton<GameManager> {
     public LifeManager LifeManager {
         get { return _lifeManager; }
     }
+
+    public ShieldManager _shieldManager;
+    public ShieldManager ShieldManager {
+        get { return _shieldManager; }
+    }
     #endregion
 }

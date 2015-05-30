@@ -40,7 +40,7 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 6
     m_ConditionEvent: controlAnimState
-    m_EventTreshold: 2
+    m_EventTreshold: 1
     m_ExitTime: .899999976
   m_Atomic: 1
   m_Solo: 0
@@ -60,7 +60,7 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 6
     m_ConditionEvent: controlAnimState
-    m_EventTreshold: 1
+    m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
   m_Solo: 0
@@ -97,6 +97,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 8482e796e2721c94ea60414b4b4e6a5f, type: 2}
   m_ParentStateMachine: {fileID: 110702512}
+<<<<<<< HEAD
   m_Position: {x: 360, y: 48, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
@@ -113,6 +114,9 @@ State:
   - {fileID: 7400000, guid: 08a630dd36947874691385aa4fdc4dae, type: 2}
   m_ParentStateMachine: {fileID: 110702512}
   m_Position: {x: -108, y: -72, z: 0}
+=======
+  m_Position: {x: 228, y: 48, z: 0}
+>>>>>>> origin/master
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -153,26 +157,32 @@ StateMachine:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Base Layer
-  m_DefaultState: {fileID: 110247902}
+  m_DefaultState: {fileID: 110271614}
   m_States:
   - {fileID: 110247902}
   - {fileID: 110271614}
+<<<<<<< HEAD
   - {fileID: 110279878}
+=======
+>>>>>>> origin/master
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
-    data:
-      first: {fileID: 110271614}
-      second: []
-    data:
-      first: {fileID: 110247902}
-      second: []
     data:
       first: {fileID: 0}
       second:
       - {fileID: 110113712}
       - {fileID: 110175520}
+<<<<<<< HEAD
       - {fileID: 110181314}
+=======
+    data:
+      first: {fileID: 110247902}
+      second: []
+    data:
+      first: {fileID: 110271614}
+      second: []
+>>>>>>> origin/master
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 60, y: 96, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
