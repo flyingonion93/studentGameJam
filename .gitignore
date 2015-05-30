@@ -45,7 +45,7 @@ Library/
 Temp/
 Assets/UnityVS
 .sln
-obj/
+obj/Debug
 UnityVS.studentGameJam3.CSharp.csproj
 *.suo
 UnityVS.studentGameJam3.CSharp.csproj

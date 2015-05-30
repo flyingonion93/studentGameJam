@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 070d004d9999c44499724ab05da5a7fd
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WalkRey_0
+    21300002: WalkRey_1
+    21300004: WalkRey_2
+    21300006: WalkRey_3
+    21300008: WalkRey_4
+    21300010: WalkRey_5
+    21300012: WalkRey_6
+    21300014: WalkRey_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: WalkRey_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 829
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WalkRey_1
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 0
+        width: 826
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WalkRey_2
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 4
+        width: 832
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WalkRey_3
+      rect:
+        serializedVersion: 2
+        x: 2992
+        y: 0
+        width: 834
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WalkRey_4
+      rect:
+        serializedVersion: 2
+        x: 3994
+        y: 4
+        width: 833
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WalkRey_5
+      rect:
+        serializedVersion: 2
+        x: 4995
+        y: 0
+        width: 833
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WalkRey_6
+      rect:
+        serializedVersion: 2
+        x: 5996
+        y: 4
+        width: 834
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WalkRey_7
+      rect:
+        serializedVersion: 2
+        x: 6998
+        y: 0
+        width: 829
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
