@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 49229d0bd01f8af42a891abd88da85ce
+guid: b08621175a9e5d040a4189545deaa0ef
 TextureImporter:
   fileIDToRecycleName:
-    21300000: explosion_0
-    21300002: explosion_1
-    21300004: explosion_2
-    21300006: explosion_3
-    21300008: explosion_4
-    21300010: explosion_5
-    21300012: explosion_6
-    21300014: explosion_7
-    21300016: explosion_8
-    21300018: explosion_9
-    21300020: explosion_10
-    21300022: explosion_11
+    21300000: caja0000_0
+    21300002: caja0000_1
+    21300004: caja0000_2
+    21300006: caja0000_3
+    21300008: caja0000_4
+    21300010: caja0000_5
+    21300012: caja0000_6
+    21300014: caja0000_7
+    21300016: caja0000_8
+    21300018: caja0000_9
+    21300020: caja0000_10
+    21300022: caja0000_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -34,7 +34,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 4096
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -49,129 +49,129 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 70
+  spritePixelsToUnits: 200
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: explosion_0
+    - name: caja0000_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 11
-        width: 737
-        height: 549
+        x: 30
+        y: 0
+        width: 241
+        height: 288
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion_1
+    - name: caja0000_1
       rect:
         serializedVersion: 2
-        x: 757
-        y: 11
-        width: 737
-        height: 549
+        x: 337
+        y: 0
+        width: 209
+        height: 288
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion_2
+    - name: caja0000_2
       rect:
         serializedVersion: 2
-        x: 1507
-        y: 11
-        width: 737
-        height: 549
+        x: 642
+        y: 0
+        width: 220
+        height: 288
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion_3
+    - name: caja0000_3
       rect:
         serializedVersion: 2
-        x: 2257
-        y: 11
-        width: 737
-        height: 549
+        x: 923
+        y: 0
+        width: 241
+        height: 288
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion_4
+    - name: caja0000_4
       rect:
         serializedVersion: 2
-        x: 3008
-        y: 11
-        width: 737
-        height: 549
+        x: 1227
+        y: 0
+        width: 217
+        height: 288
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion_5
+    - name: caja0000_5
       rect:
         serializedVersion: 2
-        x: 3757
-        y: 11
-        width: 737
-        height: 549
+        x: 1555
+        y: 0
+        width: 185
+        height: 288
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion_6
+    - name: caja0000_6
       rect:
         serializedVersion: 2
-        x: 4507
-        y: 11
-        width: 737
-        height: 549
+        x: 1817
+        y: 0
+        width: 241
+        height: 288
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion_7
+    - name: caja0000_7
       rect:
         serializedVersion: 2
-        x: 5257
-        y: 11
-        width: 737
-        height: 549
+        x: 2121
+        y: 0
+        width: 220
+        height: 288
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion_8
+    - name: caja0000_8
       rect:
         serializedVersion: 2
-        x: 6007
-        y: 11
-        width: 737
-        height: 549
+        x: 2446
+        y: 0
+        width: 192
+        height: 288
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion_9
+    - name: caja0000_9
       rect:
         serializedVersion: 2
-        x: 6757
-        y: 11
-        width: 737
-        height: 549
+        x: 2711
+        y: 0
+        width: 241
+        height: 288
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion_10
+    - name: caja0000_10
       rect:
         serializedVersion: 2
-        x: 7507
-        y: 11
-        width: 737
-        height: 549
+        x: 3015
+        y: 0
+        width: 216
+        height: 288
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion_11
+    - name: caja0000_11
       rect:
         serializedVersion: 2
-        x: 8257
-        y: 11
-        width: 737
-        height: 549
+        x: 3343
+        y: 0
+        width: 185
+        height: 288
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
