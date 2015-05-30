@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 2ed0f061921b1a745847d478302f919a
+guid: 070d004d9999c44499724ab05da5a7fd
 TextureImporter:
   fileIDToRecycleName:
-    21300000: LEPRA_DURA_0
-    21300002: LEPRA_DURA_1
-    21300004: LEPRA_DURA_2
-    21300006: LEPRA_DURA_3
-    21300008: LEPRA_DURA_4
-    21300010: LEPRA_DURA_5
-    21300012: LEPRA_DURA_6
-    21300014: LEPRA_DURA_7
+    21300000: WalkRey_0
+    21300002: WalkRey_1
+    21300004: WalkRey_2
+    21300006: WalkRey_3
+    21300008: WalkRey_4
+    21300010: WalkRey_5
+    21300012: WalkRey_6
+    21300014: WalkRey_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -32,7 +32,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 4096
   textureSettings:
-    filterMode: 1
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -51,83 +51,83 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: LEPRA_DURA_0
+    - name: WalkRey_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 25
-        width: 418
-        height: 296
+        x: 0
+        y: 4
+        width: 829
+        height: 591
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LEPRA_DURA_1
+    - name: WalkRey_1
       rect:
         serializedVersion: 2
-        x: 529
-        y: 17
-        width: 418
-        height: 304
+        x: 997
+        y: 0
+        width: 826
+        height: 595
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LEPRA_DURA_2
+    - name: WalkRey_2
       rect:
         serializedVersion: 2
-        x: 1029
-        y: 24
-        width: 418
-        height: 297
+        x: 1992
+        y: 4
+        width: 832
+        height: 591
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LEPRA_DURA_3
+    - name: WalkRey_3
       rect:
         serializedVersion: 2
-        x: 1529
-        y: 18
-        width: 418
-        height: 303
+        x: 2992
+        y: 0
+        width: 834
+        height: 595
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LEPRA_DURA_4
+    - name: WalkRey_4
       rect:
         serializedVersion: 2
-        x: 2029
-        y: 25
-        width: 418
-        height: 296
+        x: 3994
+        y: 4
+        width: 833
+        height: 591
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LEPRA_DURA_5
+    - name: WalkRey_5
       rect:
         serializedVersion: 2
-        x: 2529
-        y: 17
-        width: 422
-        height: 304
+        x: 4995
+        y: 0
+        width: 833
+        height: 595
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LEPRA_DURA_6
+    - name: WalkRey_6
       rect:
         serializedVersion: 2
-        x: 3033
-        y: 24
-        width: 418
-        height: 297
+        x: 5996
+        y: 4
+        width: 834
+        height: 591
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LEPRA_DURA_7
+    - name: WalkRey_7
       rect:
         serializedVersion: 2
-        x: 3529
-        y: 18
-        width: 422
-        height: 303
+        x: 6998
+        y: 0
+        width: 829
+        height: 595
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
