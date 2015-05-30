@@ -42,7 +42,6 @@ public class Enemy : Characters {
         switch ( currentType ) {
             case Enums.enemy_type.SWORDMAN:
                 if ( Physics2D.OverlapCircle ( transform.position, 3.0f, LayerMask.NameToLayer ( "Knight" ) ) ) {
-                    print("VIST");
                     transform.position = Vector3.MoveTowards ( transform.position, GameManager.Instance.Knight.transform.position, walkVel * Time.deltaTime );
                 }
                 break;

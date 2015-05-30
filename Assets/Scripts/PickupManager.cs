@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PickupManager : MonoBehaviour {
 
-    // Use this for initialization
-    void Start () {
+    public List<Object> lPickup;
 
+    public void SpawnRandomPickup () {
+        int pickedValue = Random.Range ( 1, lPickup.Count );
     }
 
-    // Update is called once per frame
-    void Update () {
-
-    }
 }
