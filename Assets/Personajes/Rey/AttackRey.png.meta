@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: 13e10e0c300ae9449a54153e4193be76
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AttackRey_0
+    21300002: AttackRey_1
+    21300004: AttackRey_2
+    21300006: AttackRey_6
+    21300008: AttackRey_7
+    21300010: AttackRey_8
+    21300012: AttackRey_9
+    21300014: AttackRey_10
+    21300016: AttackRey_8
+    21300018: AttackRey_11
+    21300020: AttackRey_12
+    21300022: AttackRey_11
+    21300024: AttackRey_13
+    21300026: AttackRey_14
+    21300028: AttackRey_17
+    21300030: AttackRey_18
+    21300032: AttackRey_19
+    21300034: AttackRey_4
+    21300036: AttackRey_3
+    21300038: AttackRey_4
+    21300040: AttackRey_20
+    21300042: AttackRey_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: AttackRey_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_1
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_6
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_7
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_8
+      rect:
+        serializedVersion: 2
+        x: 4040
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_9
+      rect:
+        serializedVersion: 2
+        x: 4540
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_10
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_8
+      rect:
+        serializedVersion: 2
+        x: 5638
+        y: 177
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_11
+      rect:
+        serializedVersion: 2
+        x: 5540
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_12
+      rect:
+        serializedVersion: 2
+        x: 6038
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_11
+      rect:
+        serializedVersion: 2
+        x: 6637
+        y: 177
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_13
+      rect:
+        serializedVersion: 2
+        x: 6540
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_14
+      rect:
+        serializedVersion: 2
+        x: 4431
+        y: 156
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_17
+      rect:
+        serializedVersion: 2
+        x: 5124
+        y: 116
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_18
+      rect:
+        serializedVersion: 2
+        x: 5624
+        y: 117
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_19
+      rect:
+        serializedVersion: 2
+        x: 6623
+        y: 118
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_20
+      rect:
+        serializedVersion: 2
+        x: 4624
+        y: 117
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_3
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_4
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1
+        width: 418
+        height: 393
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AttackRey_5
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 0
+        width: 418
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
