@@ -132,6 +132,12 @@ public class Squire : Characters {
             case "ExplosiveShield":
                 explosive = true;
                 break;
+            case "RollTop":
+                break;
+            case "RollCenter":
+                break;
+            case "RollBottom":
+                break;
         }
     }
 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 10afa3a4aa98f3548b8bf09d84d3b2f8
+guid: 2a99e10a6f4715d4291df59f8d90a0e3
 TextureImporter:
   fileIDToRecycleName:
     21300000: Arquero_0
@@ -7,8 +7,8 @@ TextureImporter:
     21300004: Arquero_2
     21300006: Arquero_3
     21300008: Arquero_4
-    21300010: Arquero_6
-    21300012: Arquero_5
+    21300010: Arquero_5
+    21300012: Arquero_6
     21300014: Arquero_7
   serializedVersion: 2
   mipmaps:
@@ -29,8 +29,8 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 1024
+  textureFormat: -3
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -45,7 +45,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 160
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -55,49 +55,59 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 36
-        y: 33
+        y: 34
         width: 258
-        height: 301
+        height: 299
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Arquero_1
       rect:
         serializedVersion: 2
         x: 386
-        y: 33
+        y: 34
         width: 252
-        height: 303
+        height: 302
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Arquero_2
       rect:
         serializedVersion: 2
         x: 723
-        y: 33
+        y: 34
         width: 259
         height: 304
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Arquero_3
       rect:
         serializedVersion: 2
         x: 1067
-        y: 33
+        y: 34
         width: 259
         height: 304
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Arquero_4
       rect:
         serializedVersion: 2
         x: 1411
-        y: 33
+        y: 34
         width: 259
         height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arquero_5
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 31
+        width: 242
+        height: 308
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -105,31 +115,21 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2106
-        y: 33
+        y: 34
         width: 252
-        height: 303
+        height: 302
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Arquero_7
       rect:
         serializedVersion: 2
         x: 2444
-        y: 33
+        y: 34
         width: 258
-        height: 301
+        height: 299
       alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Arquero_5
-      rect:
-        serializedVersion: 2
-        x: 1756
-        y: 33
-        width: 259
-        height: 304
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

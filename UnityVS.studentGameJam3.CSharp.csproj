@@ -64,11 +64,10 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Knight.cs" />
     <Compile Include="Assets\Scripts\LifeManager.cs" />
-    <Compile Include="Assets\Scripts\ManagerNavPoint.cs" />
-    <Compile Include="Assets\Scripts\NavPointBehaviour.cs" />
     <Compile Include="Assets\Scripts\Ninjas.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\RandomVector.cs" />
+    <Compile Include="Assets\Scripts\SceneManager.cs" />
     <Compile Include="Assets\Scripts\Shield.cs" />
     <Compile Include="Assets\Scripts\ShieldManager.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
