@@ -14,7 +14,9 @@ public class Knight : MonoBehaviour {
     }
 
     public void Update () {
-        // FALTA COMPROVAR LA SALUT
+        if ( GameManager.Instance.LifeManager.life <= 0 ) {
+            GameManager.Instance.Squire.currentInputState = Enums.inputState_nm.DEAD;
+        }
         
         StartCoroutine ( "NewNavPoint" );
     }
