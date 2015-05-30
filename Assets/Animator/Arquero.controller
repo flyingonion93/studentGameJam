@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: EscuderoC
+  m_Name: Arquero
   serializedVersion: 2
   m_AnimatorParameters:
   - m_Name: controlAnimState
@@ -17,7 +17,7 @@ AnimatorController:
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
-    m_StateMachine: {fileID: 110750622}
+    m_StateMachine: {fileID: 110721672}
     m_Mask: {fileID: 0}
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
@@ -26,7 +26,7 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1101 &110113278
+--- !u!1101 &110160974
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
@@ -34,39 +34,19 @@ Transition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_SrcState: {fileID: 0}
-  m_DstState: {fileID: 110204004}
+  m_DstState: {fileID: 110208544}
   m_TransitionDuration: .100000001
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: controlAnimState
-    m_EventTreshold: 1
-    m_ExitTime: .899999976
-  m_Atomic: 1
-  m_Solo: 0
-  m_Mute: 0
-  m_CanTransitionToSelf: 0
---- !u!1101 &110154626
-Transition:
-  serializedVersion: 2
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_SrcState: {fileID: 0}
-  m_DstState: {fileID: 110204006}
-  m_TransitionDuration: .100000001
-  m_TransitionOffset: 0
-  m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: controlAnimState
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
     m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
---- !u!1101 &110172000
+--- !u!1101 &110180448
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
@@ -74,93 +54,73 @@ Transition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_SrcState: {fileID: 0}
-  m_DstState: {fileID: 110204008}
+  m_DstState: {fileID: 110280106}
   m_TransitionDuration: .100000001
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: controlAnimState
-    m_EventTreshold: 2
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
---- !u!1102 &110204004
+--- !u!1102 &110208544
 State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: WalkEscudero
+  m_Name: ArqueroIdle
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 8482e796e2721c94ea60414b4b4e6a5f, type: 2}
-  m_ParentStateMachine: {fileID: 110750622}
-  m_Position: {x: -78, y: -81, z: 0}
+  - {fileID: 7400000, guid: c3afe486ae0b3f34b84ba122e4adf8b7, type: 2}
+  m_ParentStateMachine: {fileID: 110721672}
+  m_Position: {x: -264, y: -12, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110204006
+--- !u!1102 &110280106
 State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: IdleEscudero
+  m_Name: ArqueroAttack
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 08a630dd36947874691385aa4fdc4dae, type: 2}
-  m_ParentStateMachine: {fileID: 110750622}
-  m_Position: {x: -204, y: 24, z: 0}
+  - {fileID: 7400000, guid: dfba0bba2e0868540ac2024286bd67a3, type: 2}
+  m_ParentStateMachine: {fileID: 110721672}
+  m_Position: {x: 36, y: -108, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110204008
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: "Da\xF1oEscudero"
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: ebebb31c3e4ea8b42b087ba98e38d136, type: 2}
-  m_ParentStateMachine: {fileID: 110750622}
-  m_Position: {x: 204, y: -96, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1107 &110750622
+--- !u!1107 &110721672
 StateMachine:
   serializedVersion: 2
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Base Layer
-  m_DefaultState: {fileID: 110204008}
+  m_DefaultState: {fileID: 110280106}
   m_States:
-  - {fileID: 110204008}
-  - {fileID: 110204006}
-  - {fileID: 110204004}
+  - {fileID: 110280106}
+  - {fileID: 110208544}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
+      first: {fileID: 110208544}
+      second: []
+    data:
+      first: {fileID: 110280106}
+      second: []
+    data:
       first: {fileID: 0}
       second:
-      - {fileID: 110172000}
-      - {fileID: 110113278}
-      - {fileID: 110154626}
-    data:
-      first: {fileID: 110204006}
-      second: []
-    data:
-      first: {fileID: 110204008}
-      second: []
-    data:
-      first: {fileID: 110204004}
-      second: []
+      - {fileID: 110180448}
+      - {fileID: 110160974}
   m_MotionSetCount: 1
-  m_AnyStatePosition: {x: 72, y: 24, z: 0}
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
