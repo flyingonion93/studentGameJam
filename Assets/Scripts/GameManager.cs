@@ -50,5 +50,10 @@ public class GameManager : osSingleton<GameManager> {
     public TimeManager TimeManager {
         get { return _timeManager; }
     }
+
+    public SoundManager _soundManager;
+    public SoundManager SoundManager {
+        get { return _soundManager; }
+    }
     #endregion
 }
