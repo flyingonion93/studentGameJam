@@ -1,23 +1,24 @@
 fileFormatVersion: 2
-guid: f2901c9302e88cf469f4db8b76c374f0
+guid: dfe98a4c3851cba49b8db6c7296d3dd9
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Sir.Eructo_0
-    21300002: Sir.Eructo_1
-    21300004: Sir.Eructo_2
-    21300006: Sir.Eructo_3
-    21300008: Sir.Eructo_4
-    21300010: Sir.Eructo_5
-    21300012: Sir.Eructo_6
-    21300014: Sir.Eructo_7
-    21300016: Sir.Eructo_2
-    21300018: Sir.Eructo_5
-    21300020: Sir.Eructo_15
-    21300022: Sir.Eructo_2
-    21300024: Sir.Eructo_3
-    21300026: Sir.Eructo_13
-    21300028: Sir.Eructo_14
-    21300030: Sir.Eructo_11
+    21300000: Sir.Vomito_0
+    21300002: Sir.Vomito_2
+    21300004: Sir.Vomito_6
+    21300006: Sir.Vomito_7
+    21300008: Sir.Vomito_8
+    21300010: Sir.Vomito_9
+    21300012: Sir.Vomito_1
+    21300014: Sir.Vomito_2
+    21300016: Sir.Vomito_3
+    21300018: Sir.Vomito_4
+    21300020: Sir.Vomito_1
+    21300022: Sir.Vomito_11
+    21300024: Sir.Vomito_12
+    21300026: Sir.Vomito_13
+    21300028: Sir.Vomito_14
+    21300030: Sir.Vomito_10
+    21300032: Sir.Vomito_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -59,83 +60,63 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Sir.Eructo_0
+    - name: Sir.Vomito_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 22
         y: 0
-        width: 424
-        height: 374
+        width: 363
+        height: 400
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Sir.Eructo_1
+    - name: Sir.Vomito_1
       rect:
         serializedVersion: 2
-        x: 434
+        x: 464
         y: 0
-        width: 424
-        height: 374
+        width: 363
+        height: 400
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Sir.Eructo_6
+    - name: Sir.Vomito_2
       rect:
         serializedVersion: 2
-        x: 2571
+        x: 902
         y: 0
-        width: 424
-        height: 374
+        width: 363
+        height: 400
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Sir.Eructo_7
+    - name: Sir.Vomito_3
       rect:
         serializedVersion: 2
-        x: 2999
+        x: 1340
         y: 0
-        width: 416
-        height: 374
+        width: 363
+        height: 400
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Sir.Eructo_2
+    - name: Sir.Vomito_4
       rect:
         serializedVersion: 2
-        x: 860
+        x: 1779
         y: 0
-        width: 424
-        height: 374
+        width: 363
+        height: 400
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Sir.Eructo_3
+    - name: Sir.Vomito_5
       rect:
         serializedVersion: 2
-        x: 1287
-        y: 1
-        width: 424
-        height: 372
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Sir.Eructo_4
-      rect:
-        serializedVersion: 2
-        x: 1715
+        x: 2209
         y: 0
-        width: 424
-        height: 374
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Sir.Eructo_5
-      rect:
-        serializedVersion: 2
-        x: 2142
-        y: 0
-        width: 424
-        height: 374
+        width: 384
+        height: 400
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
