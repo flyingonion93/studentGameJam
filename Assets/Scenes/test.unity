@@ -242,6 +242,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11436918, guid: a5f38963717aeec4598f3490be6c5ccf, type: 2}
+      propertyPath: shotgun
+      value: 
+      objectReference: {fileID: 847402408}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5f38963717aeec4598f3490be6c5ccf, type: 2}
   m_RootGameObject: {fileID: 1432335416}
@@ -578,6 +582,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 666436575}
   - 61: {fileID: 666436574}
+  - 50: {fileID: 666436576}
   m_Layer: 22
   m_Name: RollTop
   m_TagString: Untagged
@@ -608,6 +613,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
+--- !u!50 &666436576
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 666436573}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &698174229
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +891,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1044878544}
   - 61: {fileID: 1044878543}
+  - 50: {fileID: 1044878545}
   m_Layer: 22
   m_Name: RollCenter
   m_TagString: Untagged
@@ -901,6 +922,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
+--- !u!50 &1044878545
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1044878542}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1071416659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,7 +1373,7 @@ MonoBehaviour:
   primaryShield: {fileID: 1244474399}
   heavyShield: {fileID: 262150374}
   currentShield: {fileID: 0}
-  shotgun: {fileID: 0}
+  shotgun: {fileID: 847402408}
   attackValue: 0
 --- !u!95 &1432335418
 Animator:
@@ -1463,6 +1499,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1520347664}
   - 61: {fileID: 1520347663}
+  - 50: {fileID: 1520347665}
   m_Layer: 22
   m_Name: RollCenter
   m_TagString: Untagged
@@ -1493,6 +1530,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
+--- !u!50 &1520347665
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520347662}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1001 &1541560265
 Prefab:
   m_ObjectHideFlags: 0
