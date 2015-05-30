@@ -234,6 +234,14 @@ Prefab:
       propertyPath: heavyShield
       value: 
       objectReference: {fileID: 262150374}
+    - target: {fileID: 9573390, guid: a5f38963717aeec4598f3490be6c5ccf, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bc0eadfbe9e963646b30fd10c5fba251, type: 2}
+    - target: {fileID: 5836918, guid: a5f38963717aeec4598f3490be6c5ccf, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5f38963717aeec4598f3490be6c5ccf, type: 2}
   m_RootGameObject: {fileID: 1432335416}
@@ -355,6 +363,84 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!1 &356752205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 356752206}
+  - 58: {fileID: 356752207}
+  m_Layer: 21
+  m_Name: PickupHeavyShield
+  m_TagString: BigShield
+  m_Icon: {fileID: 1319202362, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &356752206
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 356752205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.43000007, y: -.709999979, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+--- !u!58 &356752207
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 356752205}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .200000003
+  m_Center: {x: 0, y: 0}
+--- !u!1 &550400051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 550400052}
+  - 58: {fileID: 550400053}
+  m_Layer: 21
+  m_Name: PickupSmallShield
+  m_TagString: LittleShield
+  m_Icon: {fileID: 1319202362, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &550400052
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 550400051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.4000001, y: -.709999979, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+--- !u!58 &550400053
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 550400051}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .200000003
+  m_Center: {x: 0, y: 0}
 --- !u!1 &663064048
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +774,7 @@ Animator:
   m_GameObject: {fileID: 1432335416}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b1e043738e990a24d91e19b4e4aa2b0e, type: 2}
+  m_Controller: {fileID: 9100000, guid: bc0eadfbe9e963646b30fd10c5fba251, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -904,6 +990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4
+  ninjas: {fileID: 414032, guid: 5b899bb6cc5e8d24fb862e8f34e46f36, type: 2}
 --- !u!4 &1776835706
 Transform:
   m_ObjectHideFlags: 0
@@ -1018,6 +1105,8 @@ GameObject:
   - 4: {fileID: 2082390596}
   - 114: {fileID: 2082390597}
   - 114: {fileID: 2082390598}
+  - 114: {fileID: 2082390600}
+  - 114: {fileID: 2082390599}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1066,6 +1155,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _manager: {fileID: 2082390598}
   _managerNavPoint: {fileID: 2082390597}
-  _lifeManager: {fileID: 0}
-  _shieldManager: {fileID: 0}
-  _squire: {fileID: 0}
+  _lifeManager: {fileID: 2082390599}
+  _shieldManager: {fileID: 2082390600}
+  _squire: {fileID: 1432335417}
+  _knight: {fileID: 0}
+--- !u!114 &2082390599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082390595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3befdb689c19f8b45bf1b041cbe98938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 10
+  lifeUp: 0
+--- !u!114 &2082390600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082390595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e943442c1359f1042a03f70a0831d9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnetShield: {fileID: 0}
+  bigShield: {fileID: 0}
+  littleShield: {fileID: 0}
+  shieldPos: {fileID: 0}
+  radi: 1.79999995
+  resistance: 10

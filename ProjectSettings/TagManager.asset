@@ -8,6 +8,8 @@ TagManager:
   - Shield
   - Enemies
   - NavPoint
+  - LittleShield
+  - BigShield
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -30,7 +32,7 @@ TagManager:
   User Layer 18: SuperKnight
   User Layer 19: InvertControl
   User Layer 20: Beer
-  User Layer 21: 
+  User Layer 21: Pickup
   User Layer 22: 
   User Layer 23: 
   User Layer 24: 

@@ -71,13 +71,13 @@ public class Squire : Characters {
                 GameManager.Instance.ShieldManager.MagnetShield ();
                 break;
             case "BigShield":
+                print ( "pene" );
                 GameManager.Instance.ShieldManager.BigShieldInstance ();
                 break;
             case "LittleShield":
                 GameManager.Instance.ShieldManager.LittleShieldInstance ();
                 break;
             case "Clone":
-                //Instantiate ( ninjas, knightPos.position, Quaternion.identity );
                 GameManager.Instance.Knight.ninjas.gameObject.SetActive ( true );
                 break;
             case "BulletTime":
