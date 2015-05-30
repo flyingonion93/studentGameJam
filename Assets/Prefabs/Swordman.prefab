@@ -11,11 +11,11 @@ GameObject:
   - 212: {fileID: 21216920}
   - 95: {fileID: 9516920}
   - 61: {fileID: 6116918}
-  - 61: {fileID: 6116920}
   - 114: {fileID: 11416920}
-  m_Layer: 0
+  - 61: {fileID: 6198604}
+  m_Layer: 24
   m_Name: Swordman
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: -1500306622, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.19999981, y: -15.1999998, z: 3.5999999}
+  m_LocalPosition: {x: 4.44000006, y: .579999983, z: 3.5999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -41,9 +41,9 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1, y: 1.5}
-  m_Center: {x: .0399999991, y: .25}
---- !u!61 &6116920
+  m_Size: {x: .800000012, y: .400000006}
+  m_Center: {x: 1, y: .189999998}
+--- !u!61 &6198604
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -53,7 +53,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1.5}
-  m_Center: {x: 0, y: .25}
+  m_Center: {x: -.0299999993, y: .25}
 --- !u!95 &9516920
 Animator:
   serializedVersion: 3
