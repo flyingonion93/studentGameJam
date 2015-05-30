@@ -18,6 +18,7 @@ public class Knight : MonoBehaviour {
         if ( GameManager.Instance.LifeManager.life <= 0 ) {
             GameManager.Instance.Squire.currentInputState = Enums.inputState_nm.DEAD;
         }
+        //transform.LookAt ( new Vector3 ( currentNavPoint.position.x, 0f, currentNavPoint.position.z ) );
         transform.position = Vector3.MoveTowards ( transform.position, currentNavPoint.position, moveSpeed * Time.deltaTime );
         if ( transform.position == currentNavPoint.position )
             currentNavPoint.position = GenerateRandomVector ();

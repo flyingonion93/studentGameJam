@@ -51,9 +51,9 @@ public class GameManager : osSingleton<GameManager> {
         get { return _soundManager; }
     }
 
-    //public SceneManager _sceneManager;
-    //public SceneManager SceneManager {
-    //    get { return _sceneManager; }
-    //}
+    public SceneManager _sceneManager;
+    public SceneManager SceneManager {
+        get { return _sceneManager; }
+    }
     #endregion
 }

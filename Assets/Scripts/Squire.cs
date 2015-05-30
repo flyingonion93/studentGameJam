@@ -76,7 +76,7 @@ public class Squire : Characters {
         canAttack = true;
     }
 
-    void OnTriggerEnter2D ( Collider2D col ) {        
+    void OnTriggerEnter2D ( Collider2D col ) {
         switch ( col.tag ) {
             case "LifeUp":
                 GameManager.Instance.LifeManager.UpLife ();

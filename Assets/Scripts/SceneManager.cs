@@ -3,6 +3,11 @@ using System.Collections;
 
 public class SceneManager : MonoBehaviour {
 
-    Transform rollBottom, rollCenter, rollTop;
+    public Transform rollBottom, rollCenter, rollTop;
+
+    public void OnTriggerEnter2D ( Collider2D col ) {
+        print ( col.tag );   
+    }
+
 
 }
