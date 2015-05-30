@@ -55,11 +55,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
-        width: 831
-        height: 596
+        y: 0
+        width: 927
+        height: 711
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "SPRITE_SHIT_DA\xD1O_KING3_1"
       rect:
@@ -67,69 +67,69 @@ TextureImporter:
         x: 946
         y: 0
         width: 927
-        height: 592
+        height: 711
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "SPRITE_SHIT_DA\xD1O_KING3_2"
       rect:
         serializedVersion: 2
-        x: 2049
+        x: 1955
         y: 0
-        width: 758
+        width: 927
         height: 711
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "SPRITE_SHIT_DA\xD1O_KING3_3"
       rect:
         serializedVersion: 2
-        x: 3052
+        x: 2947
         y: 0
-        width: 751
+        width: 927
         height: 711
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "SPRITE_SHIT_DA\xD1O_KING3_4"
       rect:
         serializedVersion: 2
-        x: 4049
+        x: 3956
         y: 0
-        width: 757
+        width: 927
         height: 711
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "SPRITE_SHIT_DA\xD1O_KING3_5"
       rect:
         serializedVersion: 2
-        x: 5051
+        x: 4961
         y: 0
-        width: 751
+        width: 927
         height: 711
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "SPRITE_SHIT_DA\xD1O_KING3_6"
       rect:
         serializedVersion: 2
-        x: 6055
+        x: 5959
         y: 0
-        width: 750
+        width: 927
         height: 711
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "SPRITE_SHIT_DA\xD1O_KING3_7"
       rect:
         serializedVersion: 2
-        x: 6989
+        x: 6998
         y: 0
-        width: 854
-        height: 608
+        width: 845
+        height: 711
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
