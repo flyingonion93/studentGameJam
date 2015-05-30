@@ -10,12 +10,12 @@ public class Squire : Characters {
     }
 
     public void Update () {
-        //if ( GameManager.Instance.LifeManager.life > 0 ) {
+        if ( GameManager.Instance.LifeManager.life > 0 ) {
             currentInputState = Enums.inputState_nm.NONE;
             DetectInput ();
             UpdatePosition ();
-        //} else
-        //    currentInputState = Enums.inputState_nm.DEAD;
+        } else
+            currentInputState = Enums.inputState_nm.DEAD;
     }
 
     public override void DetectInput () {
@@ -64,7 +64,7 @@ public class Squire : Characters {
                 GameManager.Instance.ShieldManager.UpShield ();
                 break;
             case "Magnet":
-                GameManager.Instance.ShieldManager.MagnetShieldInstance ();
+                GameManager.Instance.ShieldManager.MagnetShield ();
                 break;
             case "BigShield":
                 GameManager.Instance.ShieldManager.BigShieldInstance ();

@@ -4,7 +4,7 @@ using System.Collections;
 public class ShieldManager : MonoBehaviour {
 
     public Transform magnetShield, bigShield, littleShield, shieldPos;
-
+    public float radi = 1.8f;
     public int resistance = 10;
 
     public void UpShield () {
@@ -18,15 +18,18 @@ public class ShieldManager : MonoBehaviour {
         resistance -= down;
     }
 
-    public void MagnetShieldInstance () {
-        Instantiate ( magnetShield, shieldPos.position, Quaternion.identity );
-    }
-
     public void BigShieldInstance () { 
 
     }
 
     public void LittleShieldInstance () { 
 
+    }
+
+    public void MagnetShield () {
+        bool detected = Physics2D.OverlapCircle ( shieldPos.position, radi );
+        if ( detected ) { 
+            //shieldPos.rigidbody2D.AddForce (
+        }
     }
 }
