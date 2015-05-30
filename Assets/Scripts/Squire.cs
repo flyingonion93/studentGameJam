@@ -78,6 +78,7 @@ public class Squire : Characters {
                 break;
             case "Clone":
                 //Instantiate ( ninjas, knightPos.position, Quaternion.identity );
+                GameManager.Instance.Knight.ninjas.gameObject.SetActive ( true );
                 break;
             case "BulletTime":
                 break;

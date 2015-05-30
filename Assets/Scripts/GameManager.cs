@@ -27,5 +27,10 @@ public class GameManager : osSingleton<GameManager> {
     public Squire Squire {
         get { return _squire; }
     }
+
+    public Knight _knight;
+    public Knight Knight {
+        get { return _knight; }
+    }
     #endregion
 }
