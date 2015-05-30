@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Squire : Characters {
 
-    public Transform smallShield, primaryShield, heavyShield;
+    public Transform smallShield, primaryShield, heavyShield, currentShield;
     public int attackValue;
     protected bool inverted;
 
@@ -11,6 +11,7 @@ public class Squire : Characters {
         smallShield.gameObject.SetActive ( false );
         heavyShield.gameObject.SetActive ( false );
         primaryShield.gameObject.SetActive ( true );
+        currentShield = primaryShield;
         inverted = false;
         canAttack = true;
     }
@@ -86,10 +87,12 @@ public class Squire : Characters {
             case "BigShield":
                 print ( "big" );
                 GameManager.Instance.ShieldManager.StartCoroutine( "BigShieldInstance" );
+                currentShield = heavyShield;
                 break;
             case "LittleShield":
                 print ( "little" );
                 GameManager.Instance.ShieldManager.StartCoroutine( "LittleShieldInstance" );
+                currentShield = smallShield;
                 break;
             case "Ninjas":
                 //GameManager.Instance.Knight.ninjas.gameObject.SetActive ( true );
@@ -102,6 +105,7 @@ public class Squire : Characters {
             case "SuperKnight":
                 break;
             case "InvertControl":
+                inverted = true;
                 break;
             case "Beer":
                 break;
@@ -110,8 +114,8 @@ public class Squire : Characters {
 
     public IEnumerator NewPoint () {
         while ( true ) {
-            Vector3 pointA = GameManager.Instance.Shield.transform.position;
-            Vector3 pointB = GameManager.Instance.Shield.transform.forward;
+            Vector3 pointA = currentShield.position;
+            Vector3 pointB = currentShield.forward;
             yield return StartCoroutine ( MoveObject ( transform, pointA, pointB, 0.3f ) );
             yield return StartCoroutine ( MoveObject ( transform, pointB, pointA, 0.1f ) );
         }
