@@ -3,9 +3,12 @@ using System.Collections;
 
 public class Squire : Characters {
 
+    public Transform smallShield, primaryShield, heavyShield;
     protected bool inverted;
 
     public void Start () {
+        smallShield.gameObject.SetActive ( false );
+        heavyShield.gameObject.SetActive ( false );
         inverted = false;
     }
 
@@ -31,8 +34,8 @@ public class Squire : Characters {
             currentInputState = Enums.inputState_nm.WALK;
 
         // Rotate
-        var x = Input.GetAxis("HorizontalS");
-        var y = Input.GetAxis("VerticalS");
+        float x = Input.GetAxis("HorizontalS");
+        float y = Input.GetAxis("VerticalS");
         if (x != 0.0 || y != 0.0) {
             float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(90.0f - angle, Vector3.forward);

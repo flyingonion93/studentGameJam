@@ -18,15 +18,18 @@ public class ShieldManager : MonoBehaviour {
         resistance -= down;
     }
 
-    public void MagnetShieldInstance () {
-        Instantiate ( magnetShield, shieldPos.position, Quaternion.identity );
+    public void MagnetShieldInstance () {        
     }
 
     public void BigShieldInstance () {
-        Instantiate ( bigShield, shieldPos.position, Quaternion.identity );
+        GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( true );
     }
 
     public void LittleShieldInstance () {
-        Instantiate ( littleShield, shieldPos.position, Quaternion.identity );
+        GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( false );
+        GameManager.Instance.Squire.smallShield.gameObject.SetActive ( true );
     }
 }

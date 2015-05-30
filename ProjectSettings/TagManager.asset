@@ -22,8 +22,8 @@ TagManager:
   User Layer 10: Life
   User Layer 11: Shield life
   User Layer 12: Magnet
-  User Layer 13: BigShield
-  User Layer 14: LittleShield
+  User Layer 13: Shield
+  User Layer 14: Squire
   User Layer 15: Clone
   User Layer 16: BulletTime
   User Layer 17: NuclearBurp
@@ -45,4 +45,16 @@ TagManager:
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    userID: 1
+    uniqueID: 761905289
+    locked: 0
+  - name: Character
+    userID: 2
+    uniqueID: 1310818091
+    locked: 0
+  - name: Objects
+    userID: 3
+    uniqueID: 1081395613
     locked: 0

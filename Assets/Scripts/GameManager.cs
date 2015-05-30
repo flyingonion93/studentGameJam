@@ -22,5 +22,10 @@ public class GameManager : osSingleton<GameManager> {
     public ShieldManager ShieldManager {
         get { return _shieldManager; }
     }
+
+    public Squire _squire;
+    public Squire Squire {
+        get { return _squire; }
+    }
     #endregion
 }
