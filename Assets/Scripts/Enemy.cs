@@ -140,4 +140,13 @@ public class Enemy : Characters {
         Vector3 posVec = new Vector3 ( randX, randY, transform.position.z );
         return posVec;
     }
+
+    public void OnTriggerEnter2D ( Collider2D col ) {
+        switch ( col.tag ) {
+            case "KillMachine":
+                GameManager.Instance.ShieldManager.resistance--;
+                Destroy ( this.gameObject );
+                break;
+        }
+    }
 }
