@@ -58,6 +58,7 @@ public class Enemy : Characters {
             if ( rx != 0.0 || ry != 0.0 ) {
                 float angle = Mathf.Atan2 ( ry, rx ) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis ( 90.0f - angle, Vector3.forward );
+                InvokeRepeating ("fletxes", 0.5f, 1.0f);
                 /*Vector3 aux2 = new Vector3 ();
                 // ACÍ HI HA QUE INVOCAR UNA FLETXA I LLANÇAR-LA, ESPERAR UNS SEGONS I TORNAR A REPETIR MENTRE L'OBJECTIU ESTIGA A 12 DE DISTÀNCIA
                 if ( rx > transform.position.x && ry > transform.position.y )
