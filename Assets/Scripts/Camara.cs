@@ -18,5 +18,9 @@ public class Camara : MonoBehaviour {
             transform.position = Vector3.SmoothDamp ( transform.position, destination, ref velocity, dampTime );
         }
     }
+
+    public void LateUpdate () {
+        Camera.main.transform.position = new Vector3 ( 0, Camera.main.transform.position.y, Camera.main.transform.position.z );
+    }
     #endregion
 }

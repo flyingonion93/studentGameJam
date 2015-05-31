@@ -7,7 +7,7 @@ public class SceneManager : MonoBehaviour {
     public Transform left1, left2, left3, left4, left5, left6, left7, left8, right1, right2, right3, right4, right5, right6, right7, right8;
     public Transform EnemyHorse, EnemySword, instanceEnemy;
 
-    public void Update () {
+    public void Start () {
         InvokeRepeating ( "AddEnemy", 0f, 5f );
     }
 
