@@ -41,7 +41,8 @@ public class Enemy : Characters {
     public override void UpdatePosition () {
         switch ( currentType ) {
             case Enums.enemy_type.SWORDMAN:
-                if ( Physics2D.OverlapCircle ( transform.position, 3.0f, LayerMask.NameToLayer ( "Knight" ) ) ) {
+                if ( GameManager.Instance.Knight.collider2D == Physics2D.OverlapCircle ( transform.position, 20.0f, LayerMask.NameToLayer ( "Knight" ) ) ) {
+                    print ("ALABADO");
                     transform.position = Vector3.MoveTowards ( transform.position, GameManager.Instance.Knight.transform.position, walkVel * Time.deltaTime );
                 }
                 break;

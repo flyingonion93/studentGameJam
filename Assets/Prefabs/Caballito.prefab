@@ -10,8 +10,9 @@ GameObject:
   - 4: {fileID: 400392}
   - 95: {fileID: 9500392}
   - 212: {fileID: 21200392}
-  - 58: {fileID: 5800392}
   - 114: {fileID: 11431430}
+  - 61: {fileID: 6156668}
+  - 61: {fileID: 6156670}
   m_Layer: 0
   m_Name: Caballito
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.92000008, y: 3.55999994, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.30000019, y: -6.53000021, z: 1}
+  m_LocalScale: {x: .800000012, y: .800000012, z: .800000012}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!58 &5800392
-CircleCollider2D:
+--- !u!61 &6156668
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -40,8 +41,19 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .970000029
-  m_Center: {x: -.109999999, y: 0}
+  m_Size: {x: 1.70000005, y: 2.5}
+  m_Center: {x: -.300000012, y: .449999988}
+--- !u!61 &6156670
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100392}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .5, y: 3.5}
+  m_Center: {x: .949999988, y: -.300000012}
 --- !u!95 &9500392
 Animator:
   serializedVersion: 3
@@ -87,9 +99,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 3270960097
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 01f5911a8bf4d9440b70cd278604ae84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac8dd48b7b5a781468f52f60d8f4e992, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
