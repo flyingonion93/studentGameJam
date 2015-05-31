@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SoundManager : MonoBehaviour {
 
-    public AudioClip gameTheme, fxPuke, fxMagnet, fxBurt, fxDeath, fxFixShield, fxArrow, fxBrokenShield, fxShieldUpgrade, fxRespawnShield,
-        fxShieldHit, fxKingAttack, fxKingDeath, fxKingLaugh, fxPlayerDeath, fxPowerDown, fxPowerUp, fxAttack, fxSoldierVictory,
-        fxSoliderAh, mainTheme, bossFight, shotgunTheme;
+    public List<Transform>() lSound;
+    public List<Transform>() lTracks;
 
-    protected float generalVolume, musicVolume;
 }

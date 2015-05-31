@@ -40,9 +40,8 @@ public class Enemy : Characters {
     public void Update () {
         if ( alive && currentType != Enums.enemy_type.BOWMAN && currentType != Enums.enemy_type.KING )
             UpdatePosition ();
-        else if ( alive && currentType == Enums.enemy_type.BOWMAN )
-            ;
-        //UpdateBowman ();
+        else if ( alive && currentType == Enums.enemy_type.BOWMAN ) { }
+            //UpdateBowman ();
         else if ( alive && currentType == Enums.enemy_type.KING ) {
             UpdateKing ();
             MonarchyAttack ();
@@ -199,6 +198,12 @@ public class Enemy : Characters {
                 else
                     Destroy ( this.gameObject );
                 GameManager.Instance.ShieldManager.resistance--;
+                break;
+            case "Knight":
+                GameManager.Instance.LifeManager.life--;
+                break;
+            case "Squire":
+                GameManager.Instance.LifeManager.life--;
                 break;
         }
     }

@@ -14,7 +14,6 @@ public  class Animations : MonoBehaviour {
         _animator = GetComponent<Animator> ();
         _animState = characterAnimState;
         _character = GetComponent<Characters> ();
-        Debug.Log ( _character );
     }
 
     public void Update () {

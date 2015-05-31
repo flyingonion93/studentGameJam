@@ -14,7 +14,8 @@ GameObject:
   - 114: {fileID: 11407570}
   - 95: {fileID: 9507568}
   - 212: {fileID: 21207568}
-  m_Layer: 8
+  - 58: {fileID: 5809606}
+  m_Layer: 21
   m_Name: Knight
   m_TagString: Knight
   m_Icon: {fileID: -1500306622, guid: 0000000000000000d000000000000000, type: 0}
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.9000001, y: -18.8999996, z: 3.5999999}
+  m_LocalPosition: {x: -5.9000001, y: -18.8999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59,6 +60,17 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: 0}
+--- !u!58 &5809606
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107568}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .668976307
+  m_Center: {x: 0, y: 0}
 --- !u!95 &9507568
 Animator:
   serializedVersion: 3
@@ -85,12 +97,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf167148fd594fb40a01437a8ec5d468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentInputState: 0
+  alive: 0
+  canAttack: 0
+  spawnPos: {x: 0, y: 0}
+  walkVel: 0
   LeftSide: {fileID: 0}
   RigthSide: {fileID: 0}
   currentNavPoint: {fileID: 0}
   moveSpeed: 4
   relleno: 0
-  ninjas: {fileID: 414032, guid: 5b899bb6cc5e8d24fb862e8f34e46f36, type: 2}
   temps: 3
 --- !u!114 &11407570
 MonoBehaviour:

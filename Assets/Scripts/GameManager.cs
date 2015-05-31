@@ -3,6 +3,8 @@ using System.Collections;
 
 public class GameManager : osSingleton<GameManager> {
 
+    public AudioSource musicAudioSource, generalAudioSource;
+
     protected GameManager () { }
 
     public GameManager _manager;
@@ -36,7 +38,7 @@ public class GameManager : osSingleton<GameManager> {
 
     public GUIManager _guiManager;
 
-    public GUIManager Manager {
+    public GUIManager GUIManager {
         get { return _guiManager; }
     }
 

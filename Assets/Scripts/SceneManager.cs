@@ -18,7 +18,7 @@ public class SceneManager : MonoBehaviour {
 
     public void ChangeRolls () {
         print ( rollCenter.parent.ToString () );
-        currentWar.position = new Vector3 ( currentWar.position.x, currentWar.position.y + 2 * ObtainDistance (), currentWar.position.z );
+        currentWar.position = new Vector3 ( currentWar.position.x, currentWar.position.y + 2 * ObtainDistance () - 5 , currentWar.position.z );
         if ( currentWar == war1 )
             currentWar = war2;
         else
