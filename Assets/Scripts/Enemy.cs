@@ -41,9 +41,16 @@ public class Enemy : Characters {
     public override void UpdatePosition () {
         switch ( currentType ) {
             case Enums.enemy_type.SWORDMAN:
-                if ( GameManager.Instance.Knight.collider2D == Physics2D.OverlapCircle ( transform.position, 20.0f, LayerMask.NameToLayer ( "Knight" ) ) ) {
-                    print ("ALABADO");
+                float x = transform.position.x - GameManager.Instance.Knight.transform.position.x;
+                float y = transform.position.y - GameManager.Instance.Knight.transform.position.y;
+                if ( (x < 10 || x > -10) && (y < 10 || y > -10) ) {
                     transform.position = Vector3.MoveTowards ( transform.position, GameManager.Instance.Knight.transform.position, walkVel * Time.deltaTime );
+                    float rx = GameManager.Instance.Knight.transform.position.x;
+                    float ry = GameManager.Instance.Knight.transform.position.y;
+                    if ( rx != 0.0 || ry != 0.0 ) {
+                        float angle = Mathf.Atan2 ( ry, rx ) * Mathf.Rad2Deg;
+                        transform.rotation = Quaternion.AngleAxis ( 90.0f - angle, Vector3.forward );
+                    }
                 }
                 break;
             case Enums.enemy_type.HORSEMAN:
