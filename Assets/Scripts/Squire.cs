@@ -80,8 +80,8 @@ public class Squire : Characters {
         switch ( col.tag ) {
             case "LifeUp":
                 GameManager.Instance.LifeManager.UpLife ();
-                audio.clip = GameManager.Instance.SoundManager.fxPowerUp;
-                audio.Play ();
+                //audio.clip = GameManager.Instance.SoundManager.fxPowerUp;
+                //audio.Play ();
                 Destroy ( col.gameObject );
                 break;
             case "ShieldUp":
@@ -170,11 +170,4 @@ public class Squire : Characters {
             yield return null;
         }
     }
-
-    public void OnCollisionEnter2D ( Collision2D coll ) {
-        if ( coll.gameObject.tag == "Enemies" ) { 
-            
-        }
-    }
-
 }
