@@ -7,7 +7,7 @@ public class Enemy : Characters {
     public Transform arrow;
     public Enums.enemy_type currentType;
     public int attackValue;
-    protected bool toLeft;  // per als horsemen
+    protected bool toLeft, toLeftKing;  // per als horsemen i el rei
 
     public void Start () {
         currentInputState = Enums.inputState_nm.NONE;
@@ -23,6 +23,9 @@ public class Enemy : Characters {
             case Enums.enemy_type.HORSEMAN:
                 walkVel = 3.0f;
                 break;
+            case Enums.enemy_type.KING:
+                walkVel = 2.0f;
+                break;
         }
     }
 
@@ -34,15 +37,38 @@ public class Enemy : Characters {
         throw new System.NotImplementedException ();
     }
 
-
-
     public void Update () {
         if ( alive && currentType != Enums.enemy_type.BOWMAN )
             UpdatePosition ();
         else if ( alive && currentType == Enums.enemy_type.BOWMAN )
             UpdateBowman ();
+        else if ( alive && currentType == Enums.enemy_type.KING )
+            UpdateKing ();
         else
-            Destroy (this.gameObject);
+            Destroy ( this.gameObject );
+    }
+
+    public void UpdateKing () {
+        currentInputState = Enums.inputState_nm.WALK;
+        float x = GameManager.Instance.Knight.transform.position.x;
+        float y = GameManager.Instance.Knight.transform.position.y;
+        if ( ( transform.position.x >= Left.position.x ) && ( transform.position.x <= Left.position.x + 5 ) ) {
+            Vector3 aux = new Vector3 ( Right.position.x, GameManager.Instance.Knight.transform.position.y * 3, Right.position.z );
+            transform.position = Vector3.MoveTowards ( transform.position, aux, walkVel * Time.deltaTime );
+            toLeftKing = false;
+        } else if ( ( transform.position.x <= Right.position.x ) && ( transform.position.x >= Right.position.x - 5 ) ) {
+            Vector3 aux = new Vector3 ( Left.position.x, GameManager.Instance.Knight.transform.position.y * 3, Right.position.z );
+            transform.position = Vector3.MoveTowards ( transform.position, aux, walkVel * Time.deltaTime );
+            toLeftKing = true;
+        } else {
+            if ( toLeftKing ) {
+                Vector3 aux = new Vector3 ( Left.position.x, GameManager.Instance.Knight.transform.position.y * 3, Right.position.z );
+                transform.position = Vector3.MoveTowards ( transform.position, aux, walkVel * Time.deltaTime );
+            } else {
+                Vector3 aux = new Vector3 ( Right.position.x, GameManager.Instance.Knight.transform.position.y * 3, Right.position.z );
+                transform.position = Vector3.MoveTowards ( transform.position, aux, walkVel * Time.deltaTime );
+            }
+        }
     }
 
     // VA MAL

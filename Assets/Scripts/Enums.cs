@@ -23,6 +23,7 @@ public class Enums : MonoBehaviour {
     public enum enemy_type { 
         BOWMAN,
         SWORDMAN,
-        HORSEMAN
+        HORSEMAN,
+        KING
     }
 }
