@@ -3,12 +3,13 @@ using System.Collections;
 
 public class SceneManager : MonoBehaviour {
 
-    public Transform rollCenter, begin, end;
+    public Transform rollCenter, begin, end, war1, war2, currentWar;
     public Transform left1, left2, left3, left4, left5, left6, left7, left8, right1, right2, right3, right4, right5, right6, right7, right8;
     public Transform EnemyHorse, EnemySword, instanceEnemy;
 
     public void Start () {
         InvokeRepeating ( "AddEnemy", 0f, 5f );
+        currentWar = war2;
     }
 
     public float ObtainDistance () {
@@ -16,7 +17,12 @@ public class SceneManager : MonoBehaviour {
     }
 
     public void ChangeRolls () {
-
+        print ( rollCenter.parent.ToString () );
+        currentWar.position = new Vector3 ( currentWar.position.x, currentWar.position.y + 2 * ObtainDistance (), currentWar.position.z );
+        if ( currentWar == war1 )
+            currentWar = war2;
+        else
+            currentWar = war1;
         //rollCenter.parent.position = new Vector3 ( xValue, yValue + 2 * ObtainDistance (), zValue );
     }
 
