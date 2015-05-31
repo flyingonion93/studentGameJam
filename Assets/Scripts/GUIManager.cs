@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GUIManager : MonoBehaviour {
 
-    // Use this for initialization
-    void Start () {
+    public Slider healthSlider, resistanceSlider;
 
-    }
-
-    // Update is called once per frame
-    void Update () {
-
+    public void Update () {
+        healthSlider.value = GameManager.Instance.LifeManager.life;
+        resistanceSlider.value = GameManager.Instance.ShieldManager.resistance;
     }
 }
