@@ -12,6 +12,7 @@ GameObject:
   - 212: {fileID: 21216508}
   - 61: {fileID: 6116508}
   - 114: {fileID: 11416508}
+  - 114: {fileID: 11491904}
   m_Layer: 24
   m_Name: Bowman
   m_TagString: Enemies
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.20000005, y: .74000001, z: 0}
+  m_LocalPosition: {x: -3.30967212, y: 7.01194382, z: 0}
   m_LocalScale: {x: .899999976, y: .899999976, z: .899999976}
   m_Children: []
   m_Father: {fileID: 0}
@@ -69,6 +70,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: 0
+--- !u!114 &11491904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ae732cea071f14a87c86a8d39f89bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentInputState: 0
+  alive: 0
+  canAttack: 0
+  spawnPos: {x: 0, y: 0}
+  walkVel: 0
+  Left: {fileID: 0}
+  Right: {fileID: 0}
+  arrow: {fileID: 0}
+  currentType: 0
+  attackValue: 0
 --- !u!212 &21216508
 SpriteRenderer:
   m_ObjectHideFlags: 1
