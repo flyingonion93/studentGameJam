@@ -10,6 +10,7 @@ public class Enemy : Characters {
     protected bool toLeft;  // per als horsemen
 
     public void Start () {
+        currentInputState = Enums.inputState_nm.NONE;
         alive = true;
         attackValue = 1;
         switch ( currentType ) {
@@ -50,23 +51,32 @@ public class Enemy : Characters {
         float y = transform.position.y - GameManager.Instance.Knight.transform.position.y;
         if ( ( x < 12 || x > -12 ) && ( y < 12 || y > -12 ) ) {
 
-            // NECESSITEM CONTROLAR L'ESTAT PER A QUE CANVIE A L'ANIMACIÓ DE ATACANT
+            currentInputState = Enums.inputState_nm.ATTACK;
 
             float rx = GameManager.Instance.Knight.transform.position.x;
             float ry = GameManager.Instance.Knight.transform.position.y;
             if ( rx != 0.0 || ry != 0.0 ) {
                 float angle = Mathf.Atan2 ( ry, rx ) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis ( 90.0f - angle, Vector3.forward );
-
+                Vector3 aux2 = new Vector3 ();
                 // ACÍ HI HA QUE INVOCAR UNA FLETXA I LLANÇAR-LA, ESPERAR UNS SEGONS I TORNAR A REPETIR MENTRE L'OBJECTIU ESTIGA A 12 DE DISTÀNCIA
-                Vector3 aux = new Vector3 (transform.position.x + angle, transform.position.y + angle, 0);
-                Instantiate (arrow, aux, transform.rotation);
+                if ( rx > transform.position.x && ry > transform.position.y )
+                    aux2 = new Vector3 ( transform.position.x + 1, transform.position.y + 1, 0 );
+                else if ( rx > transform.position.x && ry <= transform.position.y )
+                    aux2 = new Vector3 ( transform.position.x + 1, transform.position.y - 1, 0 );
+                else if ( rx <= transform.position.x && ry > transform.position.y )
+                    aux2 = new Vector3 ( transform.position.x - 1, transform.position.y + 1, 0 );
+                else if ( rx <= transform.position.x && ry <= transform.position.y )
+                    aux2 = new Vector3 ( transform.position.x - 1, transform.position.y - 1, 0 );
+                Instantiate (arrow, aux2, transform.rotation);
+                arrow.rigidbody2D.AddForce (new Vector2(rx,ry));
                 StartCoroutine ( "arrowDelay" );
             }
         }
     }
 
     public IEnumerator arrowDelay () {
+
         yield return new WaitForSeconds ( 2.0f );
     }
 
