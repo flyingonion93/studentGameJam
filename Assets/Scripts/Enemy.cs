@@ -58,7 +58,7 @@ public class Enemy : Characters {
             if ( rx != 0.0 || ry != 0.0 ) {
                 float angle = Mathf.Atan2 ( ry, rx ) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis ( 90.0f - angle, Vector3.forward );
-                Vector3 aux2 = new Vector3 ();
+                /*Vector3 aux2 = new Vector3 ();
                 // ACÍ HI HA QUE INVOCAR UNA FLETXA I LLANÇAR-LA, ESPERAR UNS SEGONS I TORNAR A REPETIR MENTRE L'OBJECTIU ESTIGA A 12 DE DISTÀNCIA
                 if ( rx > transform.position.x && ry > transform.position.y )
                     aux2 = new Vector3 ( transform.position.x + 1, transform.position.y + 1, 0 );
@@ -70,7 +70,7 @@ public class Enemy : Characters {
                     aux2 = new Vector3 ( transform.position.x - 1, transform.position.y - 1, 0 );
                 Instantiate (arrow, aux2, transform.rotation);
                 arrow.rigidbody2D.AddForce (new Vector2(rx,ry));
-                StartCoroutine ( "arrowDelay" );
+                StartCoroutine ( "arrowDelay" );*/
             }
         }
     }
@@ -78,6 +78,23 @@ public class Enemy : Characters {
     public IEnumerator arrowDelay () {
 
         yield return new WaitForSeconds ( 2.0f );
+    }
+
+    public void fletxes () {
+        float rx = GameManager.Instance.Knight.transform.position.x;
+        float ry = GameManager.Instance.Knight.transform.position.y;
+        Vector3 aux2 = new Vector3 ();
+        if ( rx > transform.position.x && ry > transform.position.y )
+            aux2 = new Vector3 ( transform.position.x + 1, transform.position.y + 1, 0 );
+        else if ( rx > transform.position.x && ry <= transform.position.y )
+            aux2 = new Vector3 ( transform.position.x + 1, transform.position.y - 1, 0 );
+        else if ( rx <= transform.position.x && ry > transform.position.y )
+            aux2 = new Vector3 ( transform.position.x - 1, transform.position.y + 1, 0 );
+        else if ( rx <= transform.position.x && ry <= transform.position.y )
+            aux2 = new Vector3 ( transform.position.x - 1, transform.position.y - 1, 0 );
+        
+        Instantiate ( arrow, aux2, transform.rotation );
+        arrow.rigidbody2D.AddForce ( new Vector2 ( rx, ry ) );
     }
 
     // VA BÉ
@@ -92,7 +109,7 @@ public class Enemy : Characters {
                     float ry = GameManager.Instance.Knight.transform.position.y;
                     if ( rx != 0.0 || ry != 0.0 ) {
                         float angle = Mathf.Atan2 ( ry, rx ) * Mathf.Rad2Deg;
-                        transform.rotation = Quaternion.AngleAxis ( 90.0f - angle, Vector3.forward );
+                        transform.rotation = Quaternion.AngleAxis ( 270.0f - angle, Vector3.forward );
                     }
                 }
                 break;
