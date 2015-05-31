@@ -86,8 +86,8 @@ public class Squire : Characters {
                 break;
             case "ShieldUp":
                 GameManager.Instance.ShieldManager.UpShield ();
-                audio.clip = GameManager.Instance.SoundManager.fxPowerUp;
-                audio.Play();
+                //audio.clip = GameManager.Instance.SoundManager.fxPowerUp;
+                //audio.Play();
                 Destroy ( col.gameObject );
                 break;
             case "MagShield":
@@ -97,15 +97,15 @@ public class Squire : Characters {
                 break;
             case "BigShield":
                 GameManager.Instance.ShieldManager.StartCoroutine( "BigShieldInstance" );
-                audio.clip = GameManager.Instance.SoundManager.fxShieldUpgrade;
-                audio.Play();
+                //audio.clip = GameManager.Instance.SoundManager.fxShieldUpgrade;
+                //audio.Play();
                 currentShield = heavyShield;
                 Destroy ( col.gameObject );
                 break;
             case "LittleShield":
                 GameManager.Instance.ShieldManager.StartCoroutine( "LittleShieldInstance" );
-                audio.clip = GameManager.Instance.SoundManager.fxShieldUpgrade;
-                audio.Play ();
+                //audio.clip = GameManager.Instance.SoundManager.fxShieldUpgrade;
+                //audio.Play ();
                 currentShield = smallShield;
                 Destroy ( col.gameObject );
                 break;
@@ -132,11 +132,7 @@ public class Squire : Characters {
             case "ExplosiveShield":
                 explosive = true;
                 break;
-            case "RollTop":
-                break;
             case "RollCenter":
-                break;
-            case "RollBottom":
                 break;
         }
     }

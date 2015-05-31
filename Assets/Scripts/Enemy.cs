@@ -189,8 +189,11 @@ public class Enemy : Characters {
     public void OnTriggerEnter2D ( Collider2D col ) {
         switch ( col.tag ) {
             case "KillMachine":
+                if ( this.currentType == Enums.enemy_type.KING && GameManager.Instance.LifeManager.kingsLife > 0 )
+                    GameManager.Instance.LifeManager.kingsLife--;
+                else
+                    Destroy ( this.gameObject );
                 GameManager.Instance.ShieldManager.resistance--;
-                Destroy ( this.gameObject );
                 break;
         }
     }

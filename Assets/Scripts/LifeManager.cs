@@ -5,6 +5,7 @@ public class LifeManager : MonoBehaviour {
 
     public int life;
     [HideInInspector] public int lifeUp;
+    [HideInInspector] public int kingsLife = 10;
 
     public void UpLife () {
         if ( life <= 3 ) {
