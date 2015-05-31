@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11436918}
   m_Layer: 0
   m_Name: Squire
-  m_TagString: Untagged
+  m_TagString: Squire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,9 +68,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881472f3631740d4898c7e49dfe697dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPos: {x: 0, y: 0}
   currentInputState: 0
+  alive: 0
+  canAttack: 0
+  spawnPos: {x: 0, y: 0}
   walkVel: 0
+  smallShield: {fileID: 0}
+  primaryShield: {fileID: 0}
+  heavyShield: {fileID: 0}
+  currentShield: {fileID: 0}
+  shotgun: {fileID: 0}
+  attackValue: 0
 --- !u!212 &21273390
 SpriteRenderer:
   m_ObjectHideFlags: 1
