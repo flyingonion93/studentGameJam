@@ -15,7 +15,7 @@ GameObject:
   - 61: {fileID: 6190816}
   - 114: {fileID: 11435078}
   - 114: {fileID: 11435080}
-  m_Layer: 25
+  m_Layer: 24
   m_Name: Rey
   m_TagString: King
   m_Icon: {fileID: 0}
