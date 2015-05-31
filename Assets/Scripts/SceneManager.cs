@@ -5,6 +5,9 @@ public class SceneManager : MonoBehaviour {
 
     public Transform rollCenter, begin, end;
 
+    public void Update () { 
+    }
+
     public float ObtainDistance () {
         return end.position.y - begin.position.y;
     }
@@ -15,6 +18,10 @@ public class SceneManager : MonoBehaviour {
         float yValue = rollCenter.parent.position.y;
         float zValue = rollCenter.parent.position.z;
         rollCenter.parent.position = new Vector3 ( xValue, yValue + 2 * ObtainDistance (), zValue );
+    }
+
+    public void AddEnemy () { 
+
     }
 
 }
