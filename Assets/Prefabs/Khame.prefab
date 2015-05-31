@@ -12,7 +12,7 @@ GameObject:
   - 58: {fileID: 5883930}
   - 95: {fileID: 9583930}
   - 50: {fileID: 5000294}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Khame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 3270960097
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2c2a0aba23c84fb4390563abded3b114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

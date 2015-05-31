@@ -40,9 +40,8 @@ public class Enemy : Characters {
     public void Update () {
         if ( alive && currentType != Enums.enemy_type.BOWMAN && currentType != Enums.enemy_type.KING )
             UpdatePosition ();
-        else if ( alive && currentType == Enums.enemy_type.BOWMAN )
-            ;
-        //UpdateBowman ();
+        else if ( alive && currentType == Enums.enemy_type.BOWMAN ) { }
+            //UpdateBowman ();
         else if ( alive && currentType == Enums.enemy_type.KING ) {
             UpdateKing ();
             MonarchyAttack ();
@@ -53,7 +52,7 @@ public class Enemy : Characters {
     public void MonarchyAttack () { 
         float x = transform.position.x - GameManager.Instance.Knight.transform.position.x;
         float y = transform.position.y - GameManager.Instance.Knight.transform.position.y;
-        if ( ( x < 8 || x > -8 ) && ( y < 8 || y > -8 ) ) {
+        if ( ( x < 5 || x > -5 ) && ( y < 5 || y > -5 ) ) {
             currentInputState = Enums.inputState_nm.ATTACK;
         } else
             currentInputState = Enums.inputState_nm.WALK;
@@ -119,15 +118,24 @@ public class Enemy : Characters {
     }
 
     public void fletxes () {
-        float angle = 0;
-        float rx = GameManager.Instance.Knight.transform.position.x;
-        float ry = GameManager.Instance.Knight.transform.position.y;
-        if ( rx != 0.0 || ry != 0.0 )
-            angle = Mathf.Atan2 ( ry, rx ) * Mathf.Rad2Deg;
-        Instantiate ( Khame, new Vector3 ( GameManager.Instance.Knight.transform.position.x, GameManager.Instance.Knight.transform.position.y - 2, GameManager.Instance.Knight.transform.position.z ), Quaternion.AngleAxis ( 90.0f - angle, Vector3.forward ) );
+        Instantiate ( Khame, new Vector3 ( transform.position.x, transform.position.y - 1, transform.position.z ), Quaternion.identity );
         Vector2 him = new Vector2 ( GameManager.Instance.Knight.transform.position.x, GameManager.Instance.Knight.transform.position.y );
         Khame.gameObject.rigidbody2D.AddForce ( him );
+        StartCoroutine ("boles");
         currentInputState = Enums.inputState_nm.WALK;
+    }
+
+    /*public void OnCollisionEnter2D ( Collision2D col) {
+        if ( col.gameObject.tag == "Knight" || col.gameObject.tag == "Squire" ) {
+            GameManager.Instance.LifeManager.DownLife ( 1 );
+            Destroy ( col.gameObject );
+        } else {
+            Destroy ( col.gameObject );
+        }
+    }*/
+
+    public IEnumerator boles () {
+        yield return new WaitForSeconds ( 3.0f );
     }
 
     // VA BÉ

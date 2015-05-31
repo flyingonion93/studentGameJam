@@ -21,6 +21,7 @@ public class ShieldManager : MonoBehaviour {
         resistance -= down;
         if ( resistance <= 0 ) {
             // Music
+            GameManager.Instance.Squire.heavyShield.gameObject.SetActive ( false );
             GameManager.Instance.Squire.smallShield.gameObject.SetActive ( false );
             GameManager.Instance.Squire.primaryShield.gameObject.SetActive ( false );
             GameManager.Instance.Squire.shotgun.gameObject.SetActive ( false );
