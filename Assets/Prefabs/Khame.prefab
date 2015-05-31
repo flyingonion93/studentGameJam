@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21283930}
   - 58: {fileID: 5883930}
   - 95: {fileID: 9583930}
+  - 50: {fileID: 5000294}
   m_Layer: 0
   m_Name: Khame
   m_TagString: Untagged
@@ -30,6 +31,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5000294
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183930}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!58 &5883930
 CircleCollider2D:
   m_ObjectHideFlags: 1

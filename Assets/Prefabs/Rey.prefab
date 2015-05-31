@@ -100,6 +100,7 @@ MonoBehaviour:
   walkVel: 0
   Left: {fileID: 400918, guid: 1cd80434a9c8e3c428d0f33fc145b8b6, type: 2}
   Right: {fileID: 451602, guid: 0d7059e115dff8d409db89b859d3a266, type: 2}
+  Khame: {fileID: 483930, guid: a2b976eadf4600d41bd0e5a26c194257, type: 2}
   arrow: {fileID: 0}
   currentType: 3
   attackValue: 2
