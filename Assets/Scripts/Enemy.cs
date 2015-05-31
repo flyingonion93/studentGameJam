@@ -42,9 +42,10 @@ public class Enemy : Characters {
             UpdatePosition ();
         else if ( alive && currentType == Enums.enemy_type.BOWMAN )
             UpdateBowman ();
-        else if ( alive && currentType == Enums.enemy_type.KING )
+        else if ( alive && currentType == Enums.enemy_type.KING ) {
+            print ( "Hay un pene para Laura" );
             UpdateKing ();
-        else
+        } else
             Destroy ( this.gameObject );
     }
 

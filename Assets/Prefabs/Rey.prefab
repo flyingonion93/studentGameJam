@@ -29,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.17000008, y: 8.02999973, z: 0}
+  m_LocalPosition: {x: -5.29089832, y: 26.9766808, z: 0}
   m_LocalScale: {x: .699999988, y: .699999988, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -44,7 +44,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Radius: 2.20000005
-  m_Center: {x: 0, y: -.600000024}
+  m_Center: {x: 0, y: -0}
 --- !u!61 &6190816
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -55,7 +55,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: 1.5, y: 2}
-  m_Center: {x: 3.29999995, y: -1.39999998}
+  m_Center: {x: 3.29999995, y: -.899999976}
 --- !u!61 &6190818
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -66,7 +66,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: 1.5, y: 2}
-  m_Center: {x: -3.29999995, y: -1.20000005}
+  m_Center: {x: -3.29999995, y: -.699999988}
 --- !u!95 &9556534
 Animator:
   serializedVersion: 3
@@ -98,8 +98,8 @@ MonoBehaviour:
   canAttack: 0
   spawnPos: {x: 0, y: 0}
   walkVel: 0
-  Left: {fileID: 0}
-  Right: {fileID: 0}
+  Left: {fileID: 400918, guid: 1cd80434a9c8e3c428d0f33fc145b8b6, type: 2}
+  Right: {fileID: 451602, guid: 0d7059e115dff8d409db89b859d3a266, type: 2}
   arrow: {fileID: 0}
   currentType: 3
   attackValue: 2

@@ -13,6 +13,7 @@ GameObject:
   - 61: {fileID: 6116918}
   - 114: {fileID: 11416920}
   - 61: {fileID: 6198604}
+  - 50: {fileID: 5080114}
   m_Layer: 24
   m_Name: Swordman
   m_TagString: Enemies
@@ -27,11 +28,26 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.44000006, y: .579999983, z: 3.5999999}
+  m_LocalPosition: {x: -2.01999998, y: 5.86000013, z: 3.5999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5080114
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116920}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!61 &6116918
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -80,13 +96,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69ae732cea071f14a87c86a8d39f89bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Left: {fileID: 0}
-  Rigth: {fileID: 0}
-  mainCamera: {fileID: 0}
+  currentInputState: 0
+  alive: 0
+  canAttack: 0
+  spawnPos: {x: 0, y: 0}
+  walkVel: 2
+  Left: {fileID: 400918, guid: 1cd80434a9c8e3c428d0f33fc145b8b6, type: 2}
+  Right: {fileID: 451602, guid: 0d7059e115dff8d409db89b859d3a266, type: 2}
+  arrow: {fileID: 0}
   currentType: 1
   attackValue: 1
-  walkVel: 2
-  alive: 0
 --- !u!212 &21216920
 SpriteRenderer:
   m_ObjectHideFlags: 1
