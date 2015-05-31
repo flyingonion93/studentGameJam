@@ -3,9 +3,10 @@ using System.Collections;
 
 public class Enemy : Characters {
 
-    public Transform Left, Rigth;
+    public Transform Left, Right;
     public Enums.enemy_type currentType;
     public int attackValue;
+    protected bool toLeft;
 
     public void Start () {
         alive = true;
@@ -54,19 +55,45 @@ public class Enemy : Characters {
                 }
                 break;
             case Enums.enemy_type.HORSEMAN:
-                if ( transform.position == Left.position ) {
-                    Vector3 aux = new Vector3 ( Rigth.position.x, GameManager.Instance.Knight.transform.position.y, Rigth.position.z );
+                if ( (transform.position.x >= Left.position.x) && (transform.position.x <= Left.position.x + 5) ) {
+                    Vector3 aux = new Vector3 ( Right.position.x, GameManager.Instance.Knight.transform.position.y, Right.position.z );
                     transform.position = Vector3.MoveTowards ( transform.position, aux, walkVel * Time.deltaTime );
+                    toLeft = false;
+                    if ( GameManager.Instance.Knight.transform.position.y > transform.position.y )
+                        transform.rotation = Quaternion.AngleAxis ( 180.0f, Vector3.forward );
+                    else
+                        transform.rotation = Quaternion.AngleAxis ( 0.0f, Vector3.forward );
+                } else if ( ( transform.position.x <= Right.position.x ) && ( transform.position.x >= Right.position.x - 5 ) ) {
+                    Vector3 aux = new Vector3 ( Left.position.x, GameManager.Instance.Knight.transform.position.y, Right.position.z );
+                    transform.position = Vector3.MoveTowards ( transform.position, aux, walkVel * Time.deltaTime );
+                    toLeft = true;
+                    if ( GameManager.Instance.Knight.transform.position.y > transform.position.y )
+                        transform.rotation = Quaternion.AngleAxis ( 180.0f, Vector3.forward );
+                    else
+                        transform.rotation = Quaternion.AngleAxis ( 0.0f, Vector3.forward );
                 } else {
-                    Vector3 aux = new Vector3 ( Left.position.x, GameManager.Instance.Knight.transform.position.y, Rigth.position.z );
-                    transform.position = Vector3.MoveTowards ( transform.position, aux, walkVel * Time.deltaTime );
+                    if ( toLeft ) {
+                        Vector3 aux = new Vector3 ( Left.position.x, GameManager.Instance.Knight.transform.position.y, Right.position.z );
+                        transform.position = Vector3.MoveTowards ( transform.position, aux, walkVel * Time.deltaTime );
+                        if ( GameManager.Instance.Knight.transform.position.y > transform.position.y )
+                            transform.rotation = Quaternion.AngleAxis ( 180.0f, Vector3.forward );
+                        else
+                            transform.rotation = Quaternion.AngleAxis ( 0.0f, Vector3.forward );
+                    } else {
+                        Vector3 aux = new Vector3 ( Right.position.x, GameManager.Instance.Knight.transform.position.y, Right.position.z );
+                        transform.position = Vector3.MoveTowards ( transform.position, aux, walkVel * Time.deltaTime );
+                        if ( GameManager.Instance.Knight.transform.position.y > transform.position.y )
+                            transform.rotation = Quaternion.AngleAxis ( 180.0f, Vector3.forward );
+                        else
+                            transform.rotation = Quaternion.AngleAxis ( 0.0f, Vector3.forward );
+                    }
                 }
                 break;
         }
     }
 
     protected Vector3 GenerateRandomVector () {
-        float randX = Random.Range ( Left.position.x, Rigth.position.x );
+        float randX = Random.Range ( Left.position.x, Right.position.x );
         float randY = Random.Range ( transform.position.y - 1, transform.position.y + 1 );
         Vector3 posVec = new Vector3 ( randX, randY, transform.position.z );
         return posVec;
