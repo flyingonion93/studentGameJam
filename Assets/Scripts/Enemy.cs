@@ -4,9 +4,10 @@ using System.Collections;
 public class Enemy : Characters {
 
     public Transform Left, Right;
+    public Transform arrow;
     public Enums.enemy_type currentType;
     public int attackValue;
-    protected bool toLeft;
+    protected bool toLeft;  // per als horsemen
 
     public void Start () {
         alive = true;
@@ -37,14 +38,45 @@ public class Enemy : Characters {
     public void Update () {
         if ( alive && currentType != Enums.enemy_type.BOWMAN )
             UpdatePosition ();
+        else if ( alive && currentType == Enums.enemy_type.BOWMAN )
+            UpdateBowman ();
+        else
+            Destroy (this.gameObject);
     }
 
+    // VA MAL
+    public void UpdateBowman () {
+        float x = transform.position.x - GameManager.Instance.Knight.transform.position.x;
+        float y = transform.position.y - GameManager.Instance.Knight.transform.position.y;
+        if ( ( x < 12 || x > -12 ) && ( y < 12 || y > -12 ) ) {
+
+            // NECESSITEM CONTROLAR L'ESTAT PER A QUE CANVIE A L'ANIMACIÓ DE ATACANT
+
+            float rx = GameManager.Instance.Knight.transform.position.x;
+            float ry = GameManager.Instance.Knight.transform.position.y;
+            if ( rx != 0.0 || ry != 0.0 ) {
+                float angle = Mathf.Atan2 ( ry, rx ) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.AngleAxis ( 90.0f - angle, Vector3.forward );
+
+                // ACÍ HI HA QUE INVOCAR UNA FLETXA I LLANÇAR-LA, ESPERAR UNS SEGONS I TORNAR A REPETIR MENTRE L'OBJECTIU ESTIGA A 12 DE DISTÀNCIA
+                Vector3 aux = new Vector3 (transform.position.x + angle, transform.position.y + angle, 0);
+                Instantiate (arrow, aux, transform.rotation);
+                StartCoroutine ( "arrowDelay" );
+            }
+        }
+    }
+
+    public IEnumerator arrowDelay () {
+        yield return new WaitForSeconds ( 2.0f );
+    }
+
+    // VA BÉ
     public override void UpdatePosition () {
         switch ( currentType ) {
             case Enums.enemy_type.SWORDMAN:
                 float x = transform.position.x - GameManager.Instance.Knight.transform.position.x;
                 float y = transform.position.y - GameManager.Instance.Knight.transform.position.y;
-                if ( (x < 10 || x > -10) && (y < 10 || y > -10) ) {
+                if ( (x < 8 || x > -8) && (y < 8 || y > -8) ) {
                     transform.position = Vector3.MoveTowards ( transform.position, GameManager.Instance.Knight.transform.position, walkVel * Time.deltaTime );
                     float rx = GameManager.Instance.Knight.transform.position.x;
                     float ry = GameManager.Instance.Knight.transform.position.y;
